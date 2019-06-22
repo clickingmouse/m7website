@@ -1,0 +1,2 @@
+/old https://www.majestic7guesthouse.com/
+/api/* https://jsonplaceholder.typicode.com/:splat 200
