@@ -35,8 +35,11 @@ const NavBar = () => {
         <Typography variant="h6" className={classes.title}>
           Majestic7Guesthouse
         </Typography>
-        <Button color="inherit">Menu1</Button>
-        <Button color="inherit">Menu2</Button>
+        <Button color="inherit">Home</Button>
+        <Button color="inherit">Rooms</Button>
+        <Button color="inherit">Getting Here</Button>
+        <Button color="inherit">Around Us</Button>
+        <Button color="inherit">Going To</Button>
         <Button color="inherit">Login</Button>
       </Toolbar>
     </AppBar>
