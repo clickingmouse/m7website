@@ -2,7 +2,10 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import Slider from "./Slider";
+
+import Map from "./Map";
+import FromHKIA from "./FromHKIA";
+
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
@@ -14,10 +17,12 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Landing = () => {
+const GettingHere = () => {
   const classes = useStyles();
+
   return (
     <div className={classes.root}>
+      GETTING HERE SECTION
       <Grid container spacing={3}>
         <Grid item xs>
           <Paper className={classes.paper}>xs</Paper>
@@ -31,23 +36,20 @@ const Landing = () => {
       </Grid>
       <Grid container spacing={3}>
         <Grid item xs>
-          <Paper className={classes.paper}>xs</Paper>
-        </Grid>
-        <Grid item xs={6}>
           <Paper className={classes.paper}>
-            xs=6 <br/>
-            What Our Guests Are Saying
-            <center>
-              <Slider />
-            </center>
+            <Map />
           </Paper>
         </Grid>
+      </Grid>
+      <Grid container spacing={3}>
         <Grid item xs>
-          <Paper className={classes.paper}>xs</Paper>
+          <Paper className={classes.paper}>
+            <FromHKIA />
+          </Paper>
         </Grid>
       </Grid>
     </div>
   );
 };
 
-export default Landing;
+export default GettingHere;

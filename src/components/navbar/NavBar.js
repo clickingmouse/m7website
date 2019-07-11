@@ -39,6 +39,7 @@ const NavBar = () => {
         <Button color="inherit">Rooms</Button>
         <Button color="inherit">Getting Here</Button>
         <Button color="inherit">Around Us</Button>
+        <Button color="inherit">Touristripedia</Button>
         <Button color="inherit">Going To</Button>
         <Button color="inherit">Login</Button>
       </Toolbar>

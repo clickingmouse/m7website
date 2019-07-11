@@ -48,6 +48,7 @@ const Footer = () => {
     <div className={classes.root}>
       <hr />
       <br />
+      BOTTOM FOOTER
       <Grid container spacing={1}>
         <Grid container item xs={12} spacing={3}>
           <FormRow />
