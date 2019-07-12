@@ -19,18 +19,21 @@ const AroundUs = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      Our Rooms
+      Activities
       <Paper className={classes.paper}>
         <Grid container spacing={3}>
           <Grid item xs>
-            <Paper className={classes.paper}>Solo</Paper>
+            <Paper className={classes.paper}>IMG</Paper>
           </Grid>
 
           <Grid item xs>
-            <Paper className={classes.paper}>Two's</Paper>
+            <Paper className={classes.paper}>DESCR</Paper>
           </Grid>
           <Grid item xs>
-            <Paper className={classes.paper}>Group</Paper>
+            <Paper className={classes.paper}>IMG</Paper>
+          </Grid>
+          <Grid item xs>
+            <Paper className={classes.paper}>DESCR</Paper>
           </Grid>
         </Grid>
       </Paper>
