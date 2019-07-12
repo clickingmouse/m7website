@@ -19,13 +19,13 @@ const Landing = () => {
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
-        <Grid item xs>
+        <Grid item xs={4}>
           <Paper className={classes.paper}>xs</Paper>
         </Grid>
-        <Grid item xs>
-          <Paper className={classes.paper}>xs</Paper>
+        <Grid item xs={4}>
+          <Paper className={classes.paper}>xs=4</Paper>
         </Grid>
-        <Grid item xs>
+        <Grid item xs={4}>
           <Paper className={classes.paper}>xs</Paper>
         </Grid>
       </Grid>
@@ -35,7 +35,7 @@ const Landing = () => {
         </Grid>
         <Grid item xs={6}>
           <Paper className={classes.paper}>
-            xs=6 <br/>
+            xs=6 <br />
             What Our Guests Are Saying
             <center>
               <Slider />
