@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Landing = (about = aboutText) => {
+const Landing = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>

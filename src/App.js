@@ -11,6 +11,8 @@ import "./App.css";
 
 class App extends Component {
   render() {
+    console.log(process.env.REACT_APP_TEST);
+    console.log(process.env.NODE_ENV);
     return (
       <div>
         <NavBar />;
