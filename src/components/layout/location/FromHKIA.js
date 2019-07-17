@@ -143,7 +143,7 @@ const FromHKIA = () => {
               <CardContent className={classes.content}>
                 <CardHeader title="BY TAXI" />
                 <Typography gutterBottom variant="h5" component="h2">
-                  By
+                  cabbing
                 </Typography>
               </CardContent>
             </div>
