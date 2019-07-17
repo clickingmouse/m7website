@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
 const NavBar = () => {
   const classes = useStyles();
   return (
-    <AppBar color="primary" position="static">
+    <AppBar color="primary" position="fixed">
       <Toolbar>
         <IconButton
           edge="start"
