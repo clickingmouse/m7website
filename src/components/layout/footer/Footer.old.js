@@ -56,11 +56,15 @@ const Footer = () => {
     <div className={classes.root}>
       BOTTOM FOOTER
       <Grid container spacing={1}>
-        <Grid container item xs={3} spacing={3} />
-        <Grid container item xs={3} spacing={3}>
-          <Address />
+        <Grid container item xs={12} spacing={3}>
+          <FormRow />
         </Grid>
-        <Grid container item xs={3} spacing={3} />
+        <Grid container item xs={12} spacing={3}>
+          <FormRow />
+        </Grid>
+        <Grid container item xs={12} spacing={3}>
+          <FormRow />
+        </Grid>
       </Grid>
       All Rights Reserved
     </div>
