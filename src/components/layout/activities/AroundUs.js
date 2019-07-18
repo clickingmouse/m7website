@@ -3,7 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 //import classes from "*.module.sass";
-import GroceriesCard from './GroceriesCard'
+import GroceriesCard from "./GroceriesCard";
+import BreakfastCard from "./BreakfastCard";
+import LateNightMealCard from "./LateNightMealCard";
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
@@ -21,8 +23,16 @@ const AroundUs = () => {
     <div className={classes.root}>
       Activities
       <Paper className={classes.paper}>
-      <Grid container spacing={3}>
-        <GroceriesCard />
+        <Grid container spacing={3}>
+          <Grid item xs>
+            <GroceriesCard />
+          </Grid>
+          <Grid item xs>
+            <BreakfastCard />
+          </Grid>
+          <Grid item xs>
+            <LateNightMealCard />
+          </Grid>
         </Grid>
         <Grid container spacing={3}>
           <Grid item xs>

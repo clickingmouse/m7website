@@ -43,7 +43,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const GroceriesCard = () => {
+const LateNightMealCard = () => {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -64,8 +64,8 @@ const GroceriesCard = () => {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Groceries"
-        subheader="Supermarkets Around Us"
+        title="Late Night Appetites?"
+        subheader="Early Breakfast Options"
       />
       <CardMedia className={classes.media} image={paella} title="Paella dish" />
       <CardContent>
@@ -129,4 +129,4 @@ const GroceriesCard = () => {
   );
 };
 
-export default GroceriesCard;
+export default LateNightMealCard;
