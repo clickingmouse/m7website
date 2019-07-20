@@ -8,6 +8,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
+import doubleImg from "../../../images/rooms/double.png";
 const useStyles = makeStyles({
   card: {
     maxWidth: 345
@@ -24,7 +25,7 @@ const DoubleCard = () => {
           component="img"
           alt="Contemplative Reptile"
           height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image={doubleImg}
           title="Contemplative Reptile"
         />
         <CardContent>
