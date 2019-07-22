@@ -4,6 +4,7 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Slider from "./Slider";
 
+import Hero from "./Hero";
 import victoriasferry from "../../../images/landing/victoriaharbourferry.jpg";
 import victoriasPeakView from "../../../images/landing/VictoriasPeak.jpg";
 import PeakTramView from "../../../images/landing/PeakTramView01.jpg";
@@ -31,6 +32,7 @@ const Landing = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
+      <Hero />
       <Grid container spacing={3}>
         <Grid item xs={4}>
           <Paper className={classes.paper}>xs</Paper>
