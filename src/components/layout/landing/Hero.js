@@ -8,6 +8,7 @@ const Hero = () => {
           <img src={tstArielImg} />
         </div>
       </div>
+      {/*
       <div className="section white">
         <div className="row container">
           <h2 className="header">Parallax</h2>
@@ -18,6 +19,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
+*/}
     </div>
   );
 };

@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Slider from "./Slider";
-import Container from "@material-ui/core/Container";
 
 import Hero from "./Hero";
 import victoriasferry from "../../../images/landing/victoriaharbourferry.jpg";
@@ -35,17 +34,26 @@ const Landing = () => {
     <div className={classes.root}>
       <Hero />
       <Grid container spacing={3}>
+        <Grid item xs={4}>
+          <Paper className={classes.paper}>xs</Paper>
+          <img className={classes.img} src={victoriasferry} alt="hongkong" />
+        </Grid>
         <Grid item xs={12}>
           <Paper className={classes.paper}>
+            xs=4
             <br />
-            <div className="row container">
-              <h2 className="header" style={{ textAlign: "left" }}>
-                About Us
-              </h2>
-
-              {aboutText}
-            </div>
+            <strong>About</strong>
+            <br />
+            <Container maxWidth="sm">{aboutText}</Container>
           </Paper>
+        </Grid>
+        <Grid item xs={4}>
+          <Paper className={classes.paper}>xs</Paper>
+          <img
+            className={classes.img}
+            src={PeakTramView}
+            alt="Hong Kong Peak View"
+          />
         </Grid>
       </Grid>
       <Grid container spacing={3}>
