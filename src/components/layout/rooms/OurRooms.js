@@ -2,7 +2,8 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-
+import RoomsParrallax from "./RoomsParallax";
+import RoomsFeatures from "./RoomsFeature";
 //import classes from "*.module.sass";
 import BudgetCard from "./BudgetCard";
 import SingleCard from "./SingleCard";
@@ -32,7 +33,9 @@ const OurRooms = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
+      <RoomsParrallax />
       Our Rooms
+      <RoomsFeatures />
       <br />
       {roomsText}
       <Paper className={classes.paper}>
@@ -50,21 +53,23 @@ const OurRooms = () => {
           </Grid>
           <Grid item xs>
             <Paper className={classes.paper}>
-              <DoubleCard/>
+              <DoubleCard />
             </Paper>
           </Grid>
 
           <Grid item xs>
             <Paper className={classes.paper}>
-              <TwinCard/>
+              <TwinCard />
             </Paper>
           </Grid>
           <Grid item xs>
-            <Paper className={classes.paper}><QuadrupleCard/></Paper>
+            <Paper className={classes.paper}>
+              <QuadrupleCard />
+            </Paper>
           </Grid>
           <Grid item xs>
             <Paper className={classes.paper}>
-              <FamilyCard/>
+              <FamilyCard />
             </Paper>
           </Grid>
         </Grid>
