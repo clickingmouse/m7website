@@ -7,6 +7,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import { ReactComponent as AirconIcon } from "../../../../images/rooms/icons/aircon.svg";
 
 import airconIcon from "../../../../images/rooms/icons/aircon.svg";
 const useStyles = makeStyles({
@@ -28,14 +29,9 @@ const AirconCard = () => {
     <div>
       <Card className={classes.card}>
         <CardActionArea style={{ display: "flex", flexDirection: "column" }}>
-          <CardMedia
-            className={classes.icon}
-            component="img"
-            alt="Contemplative Reptile"
-            height="151px"
-            image={airconIcon}
-            title="Contemplative Reptile"
-          />
+          <CardMedia>
+            <AirconIcon width="80%" height="auto" fill="#3f51b5" />
+          </CardMedia>
           <CardContent>
             <Typography
               variant="h6"

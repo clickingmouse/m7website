@@ -6,7 +6,7 @@ import Grid from "@material-ui/core/Grid";
 import GettingHere from "./GettingHere";
 import MapContainer from "./MapContainer";
 import FromHKIA from "./FromHKIA";
-
+import LocationParallax from "./LocationParallax";
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1

@@ -34,7 +34,7 @@ const HairdryerCard = () => {
       <Card className={classes.card}>
         <CardActionArea style={{ display: "flex", flexDirection: "column" }}>
           <CardMedia>
-            <HairdryerIcon width="60%" height="auto" fill="#3f51b5" />
+            <HairdryerIcon width="80%" height="auto" fill="#3f51b5" />
           </CardMedia>
           <CardContent>
             <Typography

@@ -4,8 +4,9 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 
 import MapContainer from "./MapContainer";
+import GettingHereTabs from "./GettingHereTabs";
 import FromHKIA from "./FromHKIA";
-
+import LocationParallax from "./LocationParallax";
 import entrance from "../../../images/location/majestic-house-entrance.jpg";
 import outrance from "../../../images/location/majestic-house-entrance-outview.jpg";
 
@@ -36,7 +37,9 @@ const GettingHere = () => {
 
   return (
     <div className={classes.root}>
+      <LocationParallax />
       GETTING HERE SECTION
+      <GettingHereTabs />
       <Grid container spacing={3}>
         <Grid item xs>
           <Paper className={classes.paper}>
