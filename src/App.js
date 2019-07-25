@@ -6,9 +6,9 @@ import OurRooms from "./components/layout/rooms/OurRooms";
 import GettingHere from "./components/layout/location/GettingHere";
 import AroundUs from "./components/layout/activities/AroundUs";
 import Footer from "./components/layout/footer/Footer";
-import Contact from "./components/layout/contact/Contact"
+import Contact from "./components/layout/contact/Contact";
 import "./App.css";
-
+import LocationParallax from "./components/layout/location/LocationParallax";
 class App extends Component {
   render() {
     console.log(process.env.REACT_APP_TEST);
@@ -18,8 +18,7 @@ class App extends Component {
         <NavBar />;
         <Landing />
         <OurRooms />
-        <GettingHere />
-        <AroundUs />
+        <LocationParallax />
         <Contact />
         <Footer />
       </div>

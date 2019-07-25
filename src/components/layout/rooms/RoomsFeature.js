@@ -11,6 +11,11 @@ import AirconCard from "./features/AirconCard";
 import BathroomCard from "./features/BathroomCard";
 import HairdryerCard from "./features/HairdryerCard";
 import TvCard from "./features/tvCard";
+import RefrigeratorCard from "./features/RefrigeratorCard";
+import KettleCard from "./features/KettleCard";
+import RackhangerCard from "./features/RackhangerCard";
+import WifiCard from "./features/WifiCard";
+
 import DeleteIcon from "@material-ui/icons/Delete";
 import Icon from "@material-ui/core/Icon";
 import IconButton from "@material-ui/core/IconButton";
@@ -51,6 +56,20 @@ const RoomsFeature = () => {
           </Grid>
           <Grid item xs={2}>
             <BottledwaterCard />
+          </Grid>
+        </Grid>
+        <Grid container spacing={2}>
+          <Grid item xs={2}>
+            <KettleCard />
+          </Grid>
+          <Grid item xs={2}>
+            <WifiCard />
+          </Grid>
+          <Grid item xs={2}>
+            <RackhangerCard />
+          </Grid>
+          <Grid item xs={2}>
+            <RefrigeratorCard />
           </Grid>
         </Grid>
       </Paper>

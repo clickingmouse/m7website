@@ -1,5 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+
+import ContactDirections from "./ContactDirections";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import ContactMap from "./ContactMap";
@@ -44,7 +46,10 @@ const Contact = () => {
             </Paper>
           </Grid>
           <Grid item xs>
-            <Paper className={classes.paper}>ADDRESS:</Paper>
+            <Paper className={classes.paper}>
+              ADDRESS:
+              <ContactDirections />
+            </Paper>
           </Grid>
         </Grid>
       </Paper>
