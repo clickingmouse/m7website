@@ -42,7 +42,7 @@ const TvCard = () => {
               component="h2"
               styles={{ lineHeight: "0" }}
             >
-              Flat Screen TV
+              Television
             </Typography>
           </CardContent>
         </CardActionArea>

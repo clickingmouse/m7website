@@ -38,7 +38,7 @@ const SoapCard = () => {
               component="h2"
               styles={{ lineHeight: "0" }}
             >
-              Sanitary Items
+              Soap & Shampoo
             </Typography>
           </CardContent>
         </CardActionArea>

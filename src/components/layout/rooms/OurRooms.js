@@ -35,7 +35,7 @@ const OurRooms = () => {
   return (
     <div className={classes.root}>
       <RoomsParrallax />
-      Our Rooms
+
       <RoomsFeatures />
       <LocationParallax />
       <Paper className={classes.paper}>

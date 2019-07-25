@@ -17,11 +17,6 @@ import RackhangerCard from "./features/RackhangerCard";
 import WifiCard from "./features/WifiCard";
 import ToothCard from "./features/ToothCard";
 import SoapCard from "./features/SoapCard";
-import DeleteIcon from "@material-ui/icons/Delete";
-import Icon from "@material-ui/core/Icon";
-import IconButton from "@material-ui/core/IconButton";
-import Button from "@material-ui/core/Button";
-import Fab from "@material-ui/core/Fab";
 
 const useStyles = makeStyles(theme => ({
   button: {
@@ -41,10 +36,10 @@ const RoomsFeature = () => {
       <Paper className={classes.paper}>
         <Grid container spacing={2}>
           <Grid item xs={2}>
-            <AirconCard />
+            <WifiCard />
           </Grid>
           <Grid item xs={2}>
-            <BathroomCard />
+            <AirconCard />
           </Grid>
           <Grid item xs={2}>
             <HairdryerCard />
@@ -56,7 +51,7 @@ const RoomsFeature = () => {
             <TowelCard />
           </Grid>
           <Grid item xs={2}>
-            <BottledwaterCard />
+            <RefrigeratorCard />
           </Grid>
         </Grid>
         <Grid container spacing={2}>
@@ -64,13 +59,13 @@ const RoomsFeature = () => {
             <SoapCard />
           </Grid>
           <Grid item xs={2}>
-            <WifiCard />
+            <BathroomCard />
           </Grid>
           <Grid item xs={2}>
             <RackhangerCard />
           </Grid>
           <Grid item xs={2}>
-            <RefrigeratorCard />
+            <BottledwaterCard />
           </Grid>
           <Grid item xs={2}>
             <ToothCard />

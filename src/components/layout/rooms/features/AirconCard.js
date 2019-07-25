@@ -38,7 +38,7 @@ const AirconCard = () => {
               component="h2"
               styles={{ lineHeight: "0" }}
             >
-              Air-Conditioner
+              Air-Con
             </Typography>
           </CardContent>
         </CardActionArea>

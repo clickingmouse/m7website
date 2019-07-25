@@ -38,7 +38,7 @@ const RackhangerCard = () => {
               component="h2"
               styles={{ lineHeight: "0" }}
             >
-              Hangin Rack
+              Rack Hanger
             </Typography>
           </CardContent>
         </CardActionArea>

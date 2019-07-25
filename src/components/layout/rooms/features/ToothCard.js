@@ -38,7 +38,7 @@ const ToothCard = () => {
               component="h2"
               styles={{ lineHeight: "0" }}
             >
-              Sanitary Items
+              Toothbrush Toothpaste
             </Typography>
           </CardContent>
         </CardActionArea>
