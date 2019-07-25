@@ -6,6 +6,8 @@ import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
+import FromHKIA from "../location/FromHKIA";
+import FromAirport from "./airport/FromAirport";
 const useStyles = makeStyles(theme => ({
   root: {
     width: "100%"
@@ -46,10 +48,7 @@ const ContactDirections = () => {
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-            Aliquam eget maximus est, id dignissim quam.
-          </Typography>
+          <FromAirport />
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel
@@ -61,9 +60,9 @@ const ContactDirections = () => {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography className={classes.heading}>CHINA (LAND)</Typography>
+          <Typography className={classes.heading}>Via Land</Typography>
           <Typography className={classes.secondaryHeading}>
-            You are currently not an owner
+            (China Cross Border Busses & Trains)
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
@@ -83,9 +82,9 @@ const ContactDirections = () => {
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
-          <Typography className={classes.heading}>Advanced settings</Typography>
+          <Typography className={classes.heading}>Via Sea</Typography>
           <Typography className={classes.secondaryHeading}>
-            Filtering has been entirely disabled for whole web server
+            (Macau Ferries)
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
@@ -104,13 +103,10 @@ const ContactDirections = () => {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography className={classes.heading}>MACAU (SEA)</Typography>
+          <Typography className={classes.heading}>Via Sea</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
-            sit amet egestas eros, vitae egestas augue. Duis vel est augue.
-          </Typography>
+          <Typography>(Macau Ferry).</Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </div>
