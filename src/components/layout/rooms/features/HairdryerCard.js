@@ -5,6 +5,7 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
+import CardHeader from "@material-ui/core/CardHeader";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
@@ -32,19 +33,17 @@ const HairdryerCard = () => {
   return (
     <div>
       <Card className={classes.card}>
-        <CardActionArea style={{ display: "flex", flexDirection: "column" }}>
+        <CardActionArea
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            textAlign: "center"
+          }}
+        >
           <CardMedia>
-            <HairdryerIcon width="80%" height="auto" fill="#3f51b5" />
+            <HairdryerIcon width="80%" height="80%" fill="#3f51b5" />
           </CardMedia>
-          <CardContent>
-            <Typography
-              variant="h6"
-              component="h2"
-              styles={{ lineHeight: "0" }}
-            >
-              Hair Dryer
-            </Typography>
-          </CardContent>
+          <CardHeader title="Hair Dryer" style={{ padding: 0 }} />
         </CardActionArea>
       </Card>
     </div>

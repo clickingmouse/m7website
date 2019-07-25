@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
+import CardHeader from "@material-ui/core/CardHeader";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -28,19 +29,17 @@ const WifiCard = () => {
   return (
     <div>
       <Card className={classes.card}>
-        <CardActionArea style={{ display: "flex", flexDirection: "column" }}>
+        <CardActionArea
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            textAlign: "center"
+          }}
+        >
           <CardMedia>
             <WifiIcon width="80%" height="auto" fill="#3f51b5" />
           </CardMedia>
-          <CardContent>
-            <Typography
-              variant="h6"
-              component="h2"
-              styles={{ lineHeight: "0" }}
-            >
-              Free Wifi
-            </Typography>
-          </CardContent>
+          <CardHeader title="Free Wifi" style={{ padding: "0" }} />
         </CardActionArea>
       </Card>
     </div>

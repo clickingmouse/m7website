@@ -3,8 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 
-import acIcon from "../../../images/rooms/icons/aircon.svg";
-import hairdryerIcon from "../../../images/rooms/icons/hairdryer.svg";
 import TowelCard from "./features/TowelCard";
 import BottledwaterCard from "./features/BottledwaterCard";
 import AirconCard from "./features/AirconCard";
@@ -42,7 +40,7 @@ const RoomsFeature = () => {
             <AirconCard />
           </Grid>
           <Grid item xs={2}>
-            <HairdryerCard />
+            <BathroomCard />
           </Grid>
           <Grid item xs={2}>
             <TvCard />
@@ -59,7 +57,7 @@ const RoomsFeature = () => {
             <SoapCard />
           </Grid>
           <Grid item xs={2}>
-            <BathroomCard />
+            <HairdryerCard />
           </Grid>
           <Grid item xs={2}>
             <RackhangerCard />
