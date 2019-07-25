@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import RoomsParrallax from "./RoomsParallax";
+import LocationParallax from "../location/LocationParallax";
 import RoomsFeatures from "./RoomsFeature";
 //import classes from "*.module.sass";
 import BudgetCard from "./BudgetCard";
@@ -36,7 +37,7 @@ const OurRooms = () => {
       <RoomsParrallax />
       Our Rooms
       <RoomsFeatures />
-      <br />
+      <LocationParallax />
       <Paper className={classes.paper}>
         <Grid container spacing={0}>
           <Grid item xs>

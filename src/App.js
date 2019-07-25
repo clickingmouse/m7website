@@ -9,6 +9,7 @@ import Footer from "./components/layout/footer/Footer";
 import Contact from "./components/layout/contact/Contact";
 import "./App.css";
 import LocationParallax from "./components/layout/location/LocationParallax";
+import FerryParallax from "./components/layout/parallax/FerryParallax";
 class App extends Component {
   render() {
     console.log(process.env.REACT_APP_TEST);
@@ -18,7 +19,7 @@ class App extends Component {
         <NavBar />;
         <Landing />
         <OurRooms />
-        <LocationParallax />
+        <FerryParallax />
         <Contact />
         <Footer />
       </div>
