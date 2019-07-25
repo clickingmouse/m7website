@@ -5,7 +5,7 @@ const RoomsParrallax = () => {
     <div>
       <div className="parallax-container">
         <div className="parallax">
-          <img src={quarryBayImg} />
+          <img src={quarryBayImg} style={{ height: "auto", width: "100%" }} />
         </div>
       </div>
     </div>

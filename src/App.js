@@ -6,7 +6,7 @@ import OurRooms from "./components/layout/rooms/OurRooms";
 import GettingHere from "./components/layout/location/GettingHere";
 import AroundUs from "./components/layout/activities/AroundUs";
 import Footer from "./components/layout/footer/Footer";
-
+import Contact from "./components/layout/contact/Contact"
 import "./App.css";
 
 class App extends Component {
@@ -20,6 +20,7 @@ class App extends Component {
         <OurRooms />
         <GettingHere />
         <AroundUs />
+        <Contact />
         <Footer />
       </div>
     );
