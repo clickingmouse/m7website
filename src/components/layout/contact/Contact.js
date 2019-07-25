@@ -32,14 +32,17 @@ const Contact = () => {
               <Map
                 id="myMap"
                 options={{
-                  center: { lat: 41.0082, lng: 28.9784 },
-                  zoom: 8
+                  center: { lat: 22.298606176308525, lng: 114.17228420963512 },
+                  zoom: 14
                 }}
                 onMapLoad={map => {
                   var marker = new window.google.maps.Marker({
-                    position: { lat: 41.0082, lng: 28.9784 },
+                    position: {
+                      lat: 22.298606176308525,
+                      lng: 114.17228420963512
+                    },
                     map: map,
-                    title: "Hello Istanbul!"
+                    title: "Hello !"
                   });
                 }}
               />

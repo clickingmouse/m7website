@@ -40,11 +40,9 @@ const ContactDirections = () => {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography className={classes.heading}>
-            From Hong Kong International Airport
-          </Typography>
+          <Typography className={classes.heading}>Via Air</Typography>
           <Typography className={classes.secondaryHeading}>
-            I am an expansion panel
+            (Hong Kong International Airport)
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>

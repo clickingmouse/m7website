@@ -37,7 +37,6 @@ const OurRooms = () => {
       Our Rooms
       <RoomsFeatures />
       <br />
-      {roomsText}
       <Paper className={classes.paper}>
         <Grid container spacing={0}>
           <Grid item xs>
