@@ -6,7 +6,6 @@ import RoomsParrallax from "./RoomsParallax";
 import LocationParallax from "../location/LocationParallax";
 import RoomsFeatures from "./RoomsFeature";
 import RoomsTabs from "./RoomsTabs";
-import SoloRooms from "./SoloRooms";
 //import classes from "*.module.sass";
 import BudgetCard from "./BudgetCard";
 import SingleCard from "./SingleCard";
@@ -40,17 +39,10 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const OurRooms = () => {
+const SoloRooms = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <RoomsParrallax />
-
-      <RoomsFeatures />
-      <LocationParallax />
-      <Paper className={classes.tabBar}>
-        <RoomsTabs />
-      </Paper>
       <Paper className={classes.paper}>
         <Grid container spacing={0}>
           <Grid item xs>
@@ -69,26 +61,10 @@ const OurRooms = () => {
               <DoubleCard />
             </Paper>
           </Grid>
-
-          <Grid item xs>
-            <Paper className={classes.paper}>
-              <TwinCard />
-            </Paper>
-          </Grid>
-          <Grid item xs>
-            <Paper className={classes.paper}>
-              <QuadrupleCard />
-            </Paper>
-          </Grid>
-          <Grid item xs>
-            <Paper className={classes.paper}>
-              <FamilyCard />
-            </Paper>
-          </Grid>
         </Grid>
       </Paper>
     </div>
   );
 };
 
-export default OurRooms;
+export default SoloRooms;
