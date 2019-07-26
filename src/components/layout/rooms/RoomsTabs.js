@@ -8,6 +8,8 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 
 import SoloRooms from "./SoloRooms";
+import DoubleRooms from "./DoubleRooms";
+import FamilyRooms from "./FamilyRooms";
 import { ReactComponent as SoloIcon } from "../../../images/rooms/icons/solo.svg";
 import { ReactComponent as DuetIcon } from "../../../images/rooms/icons/duet.svg";
 
@@ -78,13 +80,12 @@ const RoomsTabs = () => {
           <SoloRooms />
         </TabContainer>
         <TabContainer dir={theme.direction}>
-          Item Two
-          <DuetIcon />
+          <DoubleRooms />
         </TabContainer>
 
         <TabContainer dir={theme.direction}>
           Item Three
-          <FamilyIcon />
+          <FamilyRooms />
         </TabContainer>
       </SwipeableViews>
     </div>
