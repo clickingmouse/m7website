@@ -6,7 +6,7 @@ import RoomsParrallax from "./RoomsParallax";
 import LocationParallax from "../location/LocationParallax";
 import RoomsFeatures from "./RoomsFeature";
 import RoomsTabs from "./RoomsTabs";
-import SoloRooms from "./SoloRooms";
+
 //import classes from "*.module.sass";
 import BudgetCard from "./BudgetCard";
 import SingleCard from "./SingleCard";
@@ -50,42 +50,6 @@ const OurRooms = () => {
       <LocationParallax />
       <Paper className={classes.tabBar}>
         <RoomsTabs />
-      </Paper>
-      <Paper className={classes.paper}>
-        <Grid container spacing={0}>
-          <Grid item xs>
-            <Paper className={classes.paper}>
-              <BudgetCard />
-            </Paper>
-          </Grid>
-
-          <Grid item xs>
-            <Paper className={classes.paper}>
-              <SingleCard />
-            </Paper>
-          </Grid>
-          <Grid item xs>
-            <Paper className={classes.paper}>
-              <DoubleCard />
-            </Paper>
-          </Grid>
-
-          <Grid item xs>
-            <Paper className={classes.paper}>
-              <TwinCard />
-            </Paper>
-          </Grid>
-          <Grid item xs>
-            <Paper className={classes.paper}>
-              <QuadrupleCard />
-            </Paper>
-          </Grid>
-          <Grid item xs>
-            <Paper className={classes.paper}>
-              <FamilyCard />
-            </Paper>
-          </Grid>
-        </Grid>
       </Paper>
     </div>
   );
