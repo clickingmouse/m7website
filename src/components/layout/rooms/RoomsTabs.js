@@ -60,7 +60,8 @@ const RoomsTabs = () => {
         >
           <Tab
             label="Item One"
-            icon={<SoloIcon width="10%" fill="#3f51b5" />}
+            maxHeight="100%"
+            icon={<SoloIcon fill="#3f51b5" />}
           />
 
           <Tab label="Item Two" icon={<DuetIcon fill="#3f51b5" />} />
