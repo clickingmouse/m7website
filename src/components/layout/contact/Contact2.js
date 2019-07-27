@@ -31,7 +31,7 @@ const Contact = () => {
       </Grid>
 
       <Grid container spacing={1}>
-        <Grid item xs>
+        <Grid item xs={12} sm={6}>
           LEFT MAP
           <Map
             id="myMap2"
@@ -51,7 +51,7 @@ const Contact = () => {
             }}
           />
         </Grid>
-        <Grid item xs>
+        <Grid item xs={12} sm={6}>
           RIGHT GUIDE
           <ContactDirections />
         </Grid>
