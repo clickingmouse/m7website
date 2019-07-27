@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
 const Contact = () => {
   const classes = useStyles();
   return (
-    <div>
+    <div id="here">
       --== Contact Section ==--
       <br />
       <Paper className={classes.paper}>

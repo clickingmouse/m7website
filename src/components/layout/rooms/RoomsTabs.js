@@ -49,7 +49,7 @@ const RoomsTabs = () => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="relative" color="default">
+      <AppBar position="static" color="default">
         <Tabs
           value={value}
           onChange={handleChange}
@@ -60,7 +60,7 @@ const RoomsTabs = () => {
         >
           <Tab
             label="Item One"
-            icon={<SoloIcon width="25%" fill="#3f51b5" />}
+            icon={<SoloIcon width="10%" fill="#3f51b5" />}
           />
 
           <Tab label="Item Two" icon={<DuetIcon fill="#3f51b5" />} />

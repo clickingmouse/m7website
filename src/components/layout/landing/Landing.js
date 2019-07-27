@@ -38,8 +38,8 @@ const Landing = () => {
         <Grid item xs={12}>
           <Paper className={classes.paper}>
             <br />
-            <div className="row container" id="about">
-              <h2 className="header" style={{ textAlign: "left" }}>
+            <div className="row container">
+              <h2 id="about" className="header" style={{ textAlign: "left" }}>
                 About Us
               </h2>
 

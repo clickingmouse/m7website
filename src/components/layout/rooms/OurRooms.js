@@ -48,6 +48,7 @@ const OurRooms = () => {
 
       <RoomsFeatures />
       <LocationParallax />
+      <div id="rooms">Our Rooms</div>
       <Paper className={classes.tabBar}>
         <RoomsTabs />
       </Paper>
