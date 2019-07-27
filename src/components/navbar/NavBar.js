@@ -6,7 +6,8 @@ import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import { makeStyles } from "@material-ui/core/styles";
-
+//import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
@@ -35,7 +36,11 @@ const NavBar = () => {
         <Typography variant="h6" className={classes.title}>
           Majestic7Guesthouse
         </Typography>
-        <Button color="inherit">Home</Button>
+        <Button color="inherit">
+          <Link smooth to="/#about">
+            Home
+          </Link>
+        </Button>
         <Button color="inherit">Rooms</Button>
         <Button color="inherit">Getting Here</Button>
         <Button color="inherit">Around Us</Button>

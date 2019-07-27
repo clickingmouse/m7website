@@ -7,6 +7,9 @@ import GettingHere from "./components/layout/location/GettingHere";
 import AroundUs from "./components/layout/activities/AroundUs";
 import Footer from "./components/layout/footer/Footer";
 import Contact from "./components/layout/contact/Contact";
+
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 import "./App.css";
 import LocationParallax from "./components/layout/location/LocationParallax";
 import FerryParallax from "./components/layout/parallax/FerryParallax";
@@ -16,12 +19,12 @@ class App extends Component {
     console.log(process.env.NODE_ENV);
     return (
       <div>
-        <NavBar />;
-        <Landing />
-        <OurRooms />
-        <FerryParallax />
-        <Contact />
-        <Footer />
+        <Route path="/" component={NavBar} />;
+        <Route path="/" component={Landing} />
+        <Route path="/" component={OurRooms} />
+        <Route path="/" component={FerryParallax} />
+        <Route path="/" component={Contact} />
+        <Route path="/" component={Footer} />
       </div>
     );
   }
