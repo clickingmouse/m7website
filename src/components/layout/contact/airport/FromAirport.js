@@ -35,25 +35,28 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.text.secondary
   },
   card: {
-    maxWidth: "100%",
+    //maxWidth: "100%",
     display: "flex"
     //flexDirection: "column"
   },
   details: {
-    flex: "1 1 0",
+    //flex: "1 1 0",
+    //flex: "2",
     flexGrow: "1",
     display: "flex",
     flexDirection: "column"
   },
   content: {
     display: "flex",
+    //flex: 2,
     flexDirection: "column"
     //flex: "1 0 auto"
   },
   media: {
-    flex: "1 1 0",
+    // flex: "1 1 0",
+    //flex: "1 "
     //flexGrow: "1",
-    width: 0
+    width: "33%"
     //  height: 0,
     //  paddingTop: "56.25%" // 16:9
   },
@@ -69,6 +72,9 @@ const useStyles = makeStyles(theme => ({
   },
   avatar: {
     backgroundColor: red[500]
+  },
+  flexContainer: {
+    display: "flex"
   }
 }));
 
@@ -91,7 +97,7 @@ const FromHKIA = () => {
               className={classes.media}
               component="img"
               alt="airport express train image"
-              width="50%"
+              width="30%"
               image={airportexpress}
               title="Airport Express"
             />

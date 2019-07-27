@@ -7,7 +7,7 @@ import GettingHere from "./components/layout/location/GettingHere";
 import AroundUs from "./components/layout/activities/AroundUs";
 import Footer from "./components/layout/footer/Footer";
 import Contact from "./components/layout/contact/Contact";
-
+import Contact2 from "./components/layout/contact/Contact2";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import "./App.css";
@@ -24,6 +24,7 @@ class App extends Component {
         <Route path="/" component={OurRooms} />
         <Route path="/" component={FerryParallax} />
         <Route path="/" component={Contact} />
+        <Route path="/" component={Contact2} />
         <Route path="/" component={Footer} />
       </div>
     );

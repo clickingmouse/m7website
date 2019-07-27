@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.text.secondary
   }
 }));
-const Contact = () => {
+const Contact2 = () => {
   const classes = useStyles();
   return (
     <div id="here">
@@ -26,7 +26,7 @@ const Contact = () => {
       <br />
       <Paper className={classes.paper}>
         <Grid container spacing={0}>
-          <Grid item xs>
+          <Grid item xs={12} sm={6}>
             <Paper className={classes.paper} style={{ height: "50vh" }}>
               MAP
               <Map
@@ -48,7 +48,7 @@ const Contact = () => {
               />
             </Paper>
           </Grid>
-          <Grid item xs>
+          <Grid item xs={12} sm={6}>
             <Paper className={classes.paper}>
               ADDRESS:
               <ContactDirections />
@@ -59,4 +59,4 @@ const Contact = () => {
     </div>
   );
 };
-export default Contact;
+export default Contact2;
