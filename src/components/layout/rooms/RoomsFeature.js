@@ -33,42 +33,42 @@ const RoomsFeature = () => {
 
       <Paper className={classes.paper}>
         <Grid container spacing={2}>
-          <Grid item xs={2}>
+          <Grid item xs={4} sm={2}>
             <WifiCard />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={4} sm={2}>
             <AirconCard />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={4} sm={2}>
             <BathroomCard />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={4} sm={2}>
             <TvCard />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={4} sm={2}>
             <TowelCard />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={4} sm={2}>
             <RefrigeratorCard />
           </Grid>
         </Grid>
         <Grid container spacing={2}>
-          <Grid item xs={2}>
+          <Grid item xs={4} sm={2}>
             <SoapCard />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={4} sm={2}>
             <HairdryerCard />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={4} sm={2}>
             <RackhangerCard />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={4} sm={2}>
             <BottledwaterCard />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={4} sm={2}>
             <ToothCard />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={4} sm={2}>
             <KettleCard />
           </Grid>
         </Grid>

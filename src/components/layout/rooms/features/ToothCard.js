@@ -39,7 +39,7 @@ const ToothCard = () => {
           <CardMedia>
             <ToothIcon width="80%" height="auto" fill="#3f51b5" />
           </CardMedia>
-          <CardHeader title="Toothbrush/ Toothpaste" style={{ padding: 0 }} />
+          <CardHeader title="Tooth" style={{ padding: 0 }} />
         </CardActionArea>
       </Card>
     </div>

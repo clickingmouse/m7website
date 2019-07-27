@@ -13,8 +13,9 @@ import { ReactComponent as WifiIcon } from "../../../../images/rooms/icons/freew
 import airconIcon from "../../../../images/rooms/icons/aircon.svg";
 const useStyles = makeStyles({
   card: {
-    /*    textAlign: "center"
-    /*maxWidth: "100%"*/
+    /*    textAlign: "center"*/
+    maxWidth: "100%",
+    width: "100%"
   },
   icon: {
     /*  */

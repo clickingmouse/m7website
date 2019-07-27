@@ -12,7 +12,7 @@ import Typography from "@material-ui/core/Typography";
 import towelIcon from "../../../../images/rooms/icons/towel.svg";
 
 import { ReactComponent as BottledwaterIcon } from "../../../../images/rooms/icons/bottledwater.svg";
-
+import { ReactComponent as ToothIcon } from "../../../../images/rooms/icons/brush1.svg";
 const useStyles = makeStyles({
   card: {
     /*    textAlign: "center"
