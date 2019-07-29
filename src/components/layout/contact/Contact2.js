@@ -4,10 +4,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import ContactDirections from "./ContactDirections";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import ContactMap from "./ContactMap";
-import GoogleMap from "./GoogleMap";
+//import ContactMap from "./ContactMap";
+//import GoogleMap from "./GoogleMap";
 import Map2 from "./Map2";
-import MapOld from "./Map-notworking";
+//import MapOld from "./Map-notworking";
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1

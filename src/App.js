@@ -1,17 +1,17 @@
 import React, { Component } from "react";
-import Grid from "@material-ui/core/Grid";
+//import Grid from "@material-ui/core/Grid";
 import NavBar from "./components/navbar/NavBar";
 import Landing from "./components/layout/landing/Landing";
 import OurRooms from "./components/layout/rooms/OurRooms";
-import GettingHere from "./components/layout/location/GettingHere";
-import AroundUs from "./components/layout/activities/AroundUs";
+//import GettingHere from "./components/layout/location/GettingHere";
+//import AroundUs from "./components/layout/activities/AroundUs";
 import Footer from "./components/layout/footer/Footer";
-import Contact from "./components/layout/contact/Contact";
+//import Contact from "./components/layout/contact/Contact";
 import Contact2 from "./components/layout/contact/Contact2";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import "./App.css";
-import LocationParallax from "./components/layout/location/LocationParallax";
+//import LocationParallax from "./components/layout/location/LocationParallax";
 import FerryParallax from "./components/layout/parallax/FerryParallax";
 class App extends Component {
   render() {

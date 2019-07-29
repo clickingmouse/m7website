@@ -1,11 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
 import quarryBayImg from "../../../images/rooms/quarrybay.jpg";
 const RoomsParrallax = () => {
   return (
     <div>
       <div className="parallax-container">
         <div className="parallax">
-          <img src={quarryBayImg} style={{ height: "auto", width: "100%" }} />
+          <img
+            src={quarryBayImg}
+            style={{ height: "auto", width: "100%" }}
+            alt="quarry bay landmark"
+          />
         </div>
       </div>
     </div>

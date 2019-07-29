@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import ferryImg from "../../../images/parallax/ferry02.jpg";
 const FerryParallax = () => {
   return (
@@ -6,7 +6,11 @@ const FerryParallax = () => {
       <div className="parallax-container">
         <div className="parallax">
           parallax
-          <img src={ferryImg} style={{ height: "auto", width: "100%" }} />
+          <img
+            src={ferryImg}
+            style={{ height: "auto", width: "100%" }}
+            alt="colorful ferry"
+          />
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import tstArielImg from "../../../images/landing/Tsim_Sha_Tsui_Ariel.jpg";
 const Hero = () => {
   return (

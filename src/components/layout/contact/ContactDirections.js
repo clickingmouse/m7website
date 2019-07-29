@@ -6,7 +6,7 @@ import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
-import FromHKIA from "../location/FromHKIA";
+//import FromHKIA from "../location/FromHKIA";
 import FromAirport from "./airport/FromAirport";
 const useStyles = makeStyles(theme => ({
   root: {

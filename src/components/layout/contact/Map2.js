@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { render } from "react-dom";
-import { sizing } from '@material-ui/system';
+//import { render } from "react-dom";
+import { sizing } from "@material-ui/system";
 
 class Map2 extends Component {
   constructor(props) {
