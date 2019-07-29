@@ -38,7 +38,7 @@ class Map2 extends Component {
   render() {
     return (
       <div
-        style={{ width: "auto", height: "100%", minHeight: "50vh" }}
+        style={{ width: "auto", height: "100%", minHeight: "20vh" }}
         id={this.props.id}
         className="mapClass"
       >

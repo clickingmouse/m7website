@@ -23,7 +23,6 @@ class App extends Component {
         <Route path="/" component={Landing} />
         <Route path="/" component={OurRooms} />
         <Route path="/" component={FerryParallax} />
-        <Route path="/" component={Contact} />
         <Route path="/" component={Contact2} />
         <Route path="/" component={Footer} />
       </div>

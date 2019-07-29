@@ -56,9 +56,10 @@ const useStyles = makeStyles(theme => ({
     // flex: "1 1 0",
     //flex: "1 "
     //flexGrow: "1",
-    width: "33%"
+    width: "33%",
+    height: "33%"
     //  height: 0,
-    //  paddingTop: "56.25%" // 16:9
+    //paddingTop: "56.25%" // 16:9
   },
   expand: {
     transform: "rotate(0deg)",
@@ -98,6 +99,7 @@ const FromHKIA = () => {
               component="img"
               alt="airport express train image"
               width="30%"
+              height="30%"
               image={airportexpress}
               title="Airport Express"
             />
