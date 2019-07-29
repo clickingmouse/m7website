@@ -7,7 +7,7 @@ import Grid from "@material-ui/core/Grid";
 import ContactMap from "./ContactMap";
 import GoogleMap from "./GoogleMap";
 import Map from "./Map";
-import Map2 from "./Map2";
+import Map2 from "./Map-notworking";
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
