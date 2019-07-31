@@ -54,7 +54,9 @@ const NavBar = () => {
         <Button color="inherit">Around Us</Button>
         <Button color="inherit">Touristripedia</Button>
         <Button color="inherit">Going To</Button>
-        <Button color="inherit">Login</Button>
+        <Link to="/faq">
+          <Button color="inherit">FAQ</Button>
+        </Link>
       </Toolbar>
     </AppBar>
   );

@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import NavBar from "./components/navbar/NavBar";
 import Landing from "./components/layout/landing/Landing";
 import OurRooms from "./components/layout/rooms/OurRooms";
+import Faq from "./components/layout/faq/Faq";
 //import GettingHere from "./components/layout/location/GettingHere";
 //import AroundUs from "./components/layout/activities/AroundUs";
 import Footer from "./components/layout/footer/Footer";
@@ -20,10 +21,11 @@ class App extends Component {
     return (
       <div>
         <Route path="/" component={NavBar} />;
-        <Route path="/" component={Landing} />
-        <Route path="/" component={OurRooms} />
-        <Route path="/" component={FerryParallax} />
-        <Route path="/" component={Contact2} />
+        <Route exact path="/" component={Landing} />
+        <Route exact path="/" component={OurRooms} />
+        <Route exact path="/" component={FerryParallax} />
+        <Route exact path="/" component={Contact2} />
+        <Route path="/faq" component={Faq} />
         <Route path="/" component={Footer} />
       </div>
     );
