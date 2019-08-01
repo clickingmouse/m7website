@@ -4,7 +4,7 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 //import Slider from "./Slider";
 //import Container from "@material-ui/core/Container";
-
+import { connect } from "react-redux";
 import Hero from "./Hero";
 //import victoriasferry from "../../../images/landing/victoriaharbourferry.jpg";
 //import victoriasPeakView from "../../../images/landing/VictoriasPeak.jpg";
@@ -29,7 +29,8 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Landing = () => {
+const Landing = props => {
+  console.log(props);
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -42,8 +43,7 @@ const Landing = () => {
               <h2 id="about" className="header" style={{ textAlign: "left" }}>
                 About Us
               </h2>
-
-              {aboutText}
+              {props.content[0].content}
             </div>
           </Paper>
         </Grid>
@@ -52,4 +52,10 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+const mapStateToProps = state => {
+  return {
+    content: state.proj.projects
+  };
+};
+
+export default connect(mapStateToProps)(Landing);
