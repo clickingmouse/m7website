@@ -8,6 +8,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 //import FromHKIA from "../location/FromHKIA";
 import FromAirport from "./airport/FromAirport";
+import FromAirport2 from "./airport/FromAirport2";
 const useStyles = makeStyles(theme => ({
   root: {
     width: "100%"
@@ -48,7 +49,7 @@ const ContactDirections = () => {
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <FromAirport />
+          <FromAirport2 />
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel

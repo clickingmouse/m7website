@@ -15,7 +15,8 @@ import RackhangerCard from "./features/RackhangerCard";
 import WifiCard from "./features/WifiCard";
 import ToothCard from "./features/ToothCard";
 import SoapCard from "./features/SoapCard";
-
+import ToiletriesCard from "./features/ToiletriesCard";
+import MapsCard from "./features/MapsCard";
 const useStyles = makeStyles(theme => ({
   button: {
     margin: theme.spacing(1)
@@ -54,7 +55,7 @@ const RoomsFeature = () => {
         </Grid>
         <Grid container spacing={2}>
           <Grid item xs={4} sm={2}>
-            <SoapCard />
+            <MapsCard />
           </Grid>
           <Grid item xs={4} sm={2}>
             <HairdryerCard />
@@ -66,7 +67,7 @@ const RoomsFeature = () => {
             <BottledwaterCard />
           </Grid>
           <Grid item xs={4} sm={2}>
-            <ToothCard />
+            <ToiletriesCard />
           </Grid>
           <Grid item xs={4} sm={2}>
             <KettleCard />
