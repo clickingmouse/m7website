@@ -5,6 +5,8 @@ import Grid from "@material-ui/core/Grid";
 //import Slider from "./Slider";
 //import Container from "@material-ui/core/Container";
 import { connect } from "react-redux";
+import { firestoreConnect } from "react-redux-firebase";
+import { compose } from "redux";
 import Hero from "./Hero";
 //import victoriasferry from "../../../images/landing/victoriaharbourferry.jpg";
 //import victoriasPeakView from "../../../images/landing/VictoriasPeak.jpg";
@@ -58,4 +60,7 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps)(Landing);
+export default compose(
+  connect(mapStateToProps),
+  firestoreConnect([{ collection: "siteMainContent" }])
+)(Landing);
