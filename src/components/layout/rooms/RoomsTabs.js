@@ -61,14 +61,23 @@ const RoomsTabs = () => {
           centered
         >
           <Tab
-            label="Item One"
+            titleTypographyProps={{ variant: "h6" }}
+            style={{ color: "#3f51b5" }}
+            label="Solo Traveller"
             maxheight="100%"
             icon={<SoloIcon fill="#3f51b5" />}
           />
 
-          <Tab label="Item Two" icon={<DuetIcon fill="#3f51b5" />} />
           <Tab
-            label="Item Three"
+            titleTypographyProps={{ variant: "h6" }}
+            style={{ color: "#3f51b5" }}
+            label="Tango Pair"
+            icon={<DuetIcon fill="#3f51b5" />}
+          />
+          <Tab
+            titleTypographyProps={{ variant: "h6" }}
+            style={{ color: "#3f51b5" }}
+            label="Family Retreatx"
             icon={<FamilyIcon width="25%" fill="#3f51b5" />}
           />
         </Tabs>
