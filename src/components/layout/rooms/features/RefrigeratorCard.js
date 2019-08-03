@@ -39,7 +39,11 @@ const RefrigeratorCard = () => {
           <CardMedia>
             <RefrigeratorIcon width="80%" height="auto" fill="#3f51b5" />
           </CardMedia>
-          <CardHeader title="Refrigerator" style={{ padding: 0 }} />
+          <CardHeader
+            titleTypographyProps={{ variant: "h6" }}
+            style={{ padding: 0, color: "#3f51b5" }}
+            title="Refrigerator"
+          />
         </CardActionArea>
       </Card>
     </div>

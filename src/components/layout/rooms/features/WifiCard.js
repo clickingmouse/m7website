@@ -40,7 +40,11 @@ const WifiCard = () => {
           <CardMedia>
             <WifiIcon width="80%" height="auto" fill="#3f51b5" />
           </CardMedia>
-          <CardHeader title="Free Wifi" style={{ padding: "0" }} />
+          <CardHeader
+            titleTypographyProps={{ variant: "h6" }}
+            style={{ padding: 0, color: "#3f51b5" }}
+            title="Free Wifi"
+          />
         </CardActionArea>
       </Card>
     </div>

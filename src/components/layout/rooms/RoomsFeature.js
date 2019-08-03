@@ -33,7 +33,7 @@ const RoomsFeature = () => {
       <h2 className="header">Features</h2>
 
       <Paper className={classes.paper}>
-        <Grid container spacing={2}>
+        <Grid container spacing={2} style={{ padding: 10 }}>
           <Grid item xs={4} sm={2}>
             <WifiCard />
           </Grid>
@@ -53,7 +53,8 @@ const RoomsFeature = () => {
             <RefrigeratorCard />
           </Grid>
         </Grid>
-        <Grid container spacing={2}>
+
+        <Grid container spacing={2} style={{ padding: 10 }}>
           <Grid item xs={4} sm={2}>
             <MapsCard />
           </Grid>

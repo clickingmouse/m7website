@@ -39,7 +39,11 @@ const AirconCard = () => {
           <CardMedia>
             <AirconIcon width="80%" height="80%" fill="#3f51b5" />
           </CardMedia>
-          <CardHeader title="AirCon" style={{ padding: 0 }} />
+          <CardHeader
+            titleTypographyProps={{ variant: "h6" }}
+            style={{ padding: 0, color: "#3f51b5" }}
+            title="AirCon"
+          />
         </CardActionArea>
       </Card>
     </div>

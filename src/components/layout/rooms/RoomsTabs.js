@@ -14,6 +14,8 @@ import { ReactComponent as SoloIcon } from "../../../images/rooms/icons/solo.svg
 import { ReactComponent as DuetIcon } from "../../../images/rooms/icons/duet.svg";
 
 import { ReactComponent as FamilyIcon } from "../../../images/rooms/icons/family.svg";
+
+import { maxHeight } from "@material-ui/system";
 function TabContainer({ children, dir }) {
   return (
     <Typography component="div" dir={dir} style={{ padding: 8 * 3 }}>
@@ -60,7 +62,7 @@ const RoomsTabs = () => {
         >
           <Tab
             label="Item One"
-            maxHeight="100%"
+            maxheight="100%"
             icon={<SoloIcon fill="#3f51b5" />}
           />
 

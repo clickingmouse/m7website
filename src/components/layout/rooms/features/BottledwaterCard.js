@@ -43,7 +43,11 @@ const TowelCard = () => {
           <CardMedia>
             <BottledwaterIcon width="80%" height="auto" fill="#3f51b5" />
           </CardMedia>
-          <CardHeader title="Bottled Water" style={{ padding: 0 }} />
+          <CardHeader
+            titleTypographyProps={{ variant: "h6" }}
+            style={{ padding: 0, color: "#3f51b5" }}
+            title="Bottled Water"
+          />
         </CardActionArea>
       </Card>
     </div>

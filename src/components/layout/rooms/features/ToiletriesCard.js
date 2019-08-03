@@ -40,7 +40,11 @@ const ToiletriesCard = () => {
           <CardMedia>
             <ToiletriesIcon width="80%" height="auto" fill="#3f51b5" />
           </CardMedia>
-          <CardHeader title="Toiletries" style={{ padding: "0" }} />
+          <CardHeader
+            titleTypographyProps={{ variant: "h6" }}
+            style={{ padding: 0, color: "#3f51b5" }}
+            title="Toiletries"
+          />
         </CardActionArea>
       </Card>
     </div>

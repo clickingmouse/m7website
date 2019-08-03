@@ -32,11 +32,11 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Landing = props => {
-  console.log("...");
-  console.log(props);
-  console.log(props.content[0].content);
-  let mainText = props.content[0].content.split("\n").map(i => {
-    return <p>{i}</p>;
+  //console.log("...");
+  //console.log(props);
+  //console.log(props.content[0].content);
+  let mainText = props.content[0].content.split("\n").map((i, index) => {
+    return <p key={index}>{i}</p>;
   });
   const classes = useStyles();
   return (
@@ -61,8 +61,8 @@ const Landing = props => {
 };
 
 const mapStateToProps = state => {
-  console.log(">>>");
-  console.log(state);
+  //console.log(">>>");
+  //console.log(state);
   return {
     content: state.proj.projects,
     mainContent: state.firestore.data.siteMainContent
