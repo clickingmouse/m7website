@@ -11,7 +11,7 @@ import Typography from "@material-ui/core/Typography";
 import doubleImg from "../../../images/rooms/double.png";
 const useStyles = makeStyles({
   card: {
-    maxWidth: 345
+    maxWidth: "100%"
   }
 });
 

@@ -12,7 +12,7 @@ import singleImg from "../../../images/rooms/single.jpg";
 
 const useStyles = makeStyles({
   card: {
-    maxWidth: 345
+    maxWidth: "100%"
   }
 });
 

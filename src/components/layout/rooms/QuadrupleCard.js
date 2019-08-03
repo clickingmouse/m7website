@@ -11,7 +11,7 @@ import Typography from "@material-ui/core/Typography";
 import quadrupleImg from "../../../images/rooms/quadruple.jpg";
 const useStyles = makeStyles({
   card: {
-    maxWidth: 345
+    maxWidth: "100%"
   }
 });
 
