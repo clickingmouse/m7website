@@ -33,7 +33,7 @@ const Contact = () => {
 
       <Grid container spacing={1}>
         <Grid item xs={12} sm={6}>
-          LEFT MAP
+          {/*.*/}
           <Paper className={classes.paper}>
             <Map2
               id="myMap2"
@@ -55,7 +55,10 @@ const Contact = () => {
           </Paper>
         </Grid>
         <Grid item xs={12} sm={6}>
-          RIGHT GUIDE
+          <span>Address:</span>{" "}
+          <p>
+            7D Majestic House, 80 Nathan Road, Tsim Sha Tsui, Kowloon, Hong Kong{" "}
+          </p>
           <ContactDirections />
         </Grid>
       </Grid>
