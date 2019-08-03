@@ -32,7 +32,12 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Landing = props => {
+  console.log("...");
   console.log(props);
+  console.log(props.content[0].content);
+  let mainText = props.content[0].content.split("\n").map(i => {
+    return <p>{i}</p>;
+  });
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -45,7 +50,8 @@ const Landing = props => {
               <h2 id="about" className="header" style={{ textAlign: "left" }}>
                 About Us
               </h2>
-              {props.content[0].content}
+
+              {mainText}
             </div>
           </Paper>
         </Grid>
@@ -55,8 +61,11 @@ const Landing = props => {
 };
 
 const mapStateToProps = state => {
+  console.log(">>>");
+  console.log(state);
   return {
-    content: state.proj.projects
+    content: state.proj.projects,
+    mainContent: state.firestore.data.siteMainContent
   };
 };
 
