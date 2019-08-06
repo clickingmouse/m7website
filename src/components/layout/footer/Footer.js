@@ -28,7 +28,13 @@ const useStyles = makeStyles(theme => ({
     overflowX: "auto"
     //backgroundColor: footerPrimary
   },
-  wrapper: { backgroundColor: footerPrimary },
+  wrapper: {
+    backgroundColor: footerPrimary,
+    height: "100%"
+    //marginTop: theme.spacing(1),
+    // marginBottom: theme.spacing(2),
+    //overflowX: "auto"
+  },
   follow: {
     display: "flex",
     flexDirection: "column"
@@ -59,14 +65,12 @@ const Footer = () => {
     <React.Fragment>
       <div className={classes.wrapper}>
         <Container>
+          <Grid container spacing={1} />
           <Grid container spacing={1}>
-            -=FOOTER=-
-          </Grid>
-          <Grid container spacing={1}>
-            <Grid container item xs={3} spacing={3} />
-            <Grid container item xs={3} spacing={3} />
-            <Grid container item xs={3} spacing={3} />
-            <Grid container item xs={3} spacing={3} className={classes.follow}>
+            <Grid item xs={3} spacing={3} />
+            <Grid item xs={3} spacing={3} />
+            <Grid item xs={3} spacing={3} />
+            <Grid item xs={3} spacing={3} className={classes.follow}>
               <div className={classes.text}>Follow Us</div>
               <Divider />
               <Toolbar>
@@ -82,38 +86,12 @@ const Footer = () => {
               </Toolbar>
             </Grid>
           </Grid>
+          <Grid container spacing={1}>
+            <Grid item xs={12} spacing={3}>
+              All Rights Reserved
+            </Grid>
+          </Grid>
         </Container>
-      </div>
-      <div className={classes.root}>
-        <Toolbar className={classes.toolBar}>
-          tool bar
-          <Grid container spacing={1}>
-            ...
-          </Grid>
-          <Grid container item xs={3} spacing={3} />
-          <Grid container item xs={3} spacing={3}>
-            FollowUs
-          </Grid>
-          <Grid container spacing={1}>
-            ...
-          </Grid>
-        </Toolbar>
-      </div>
-
-      <div className={classes.root} color="inherit">
-        BOTTOM FOOTER
-        <Grid container spacing={1}>
-          <Grid container item xs={3} spacing={3} />
-          <Grid container item xs={3} spacing={3}>
-            <Address />
-          </Grid>
-          <Grid container item xs={3} spacing={3}>
-            <ContactInfo />
-          </Grid>
-
-          <Grid container item xs={3} spacing={3} />
-        </Grid>
-        All Rights Reserved
       </div>
     </React.Fragment>
   );
