@@ -56,7 +56,7 @@ const BudgetCard = () => {
                 <ListItemIcon>
                   <Label />
                 </ListItemIcon>
-                <ListItemText primary="Windowless" />
+                <ListItemText primary="Windowlessx" />
               </ListItem>
             </List>
           </Paper>
