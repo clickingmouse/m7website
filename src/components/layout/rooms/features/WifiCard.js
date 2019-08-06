@@ -25,7 +25,7 @@ const useStyles = makeStyles({
   }
 });
 
-const WifiCard = () => {
+const WifiCard = props => {
   const classes = useStyles();
   return (
     <div>
@@ -38,7 +38,7 @@ const WifiCard = () => {
           }}
         >
           <CardMedia>
-            <WifiIcon width="80%" height="auto" fill="#3f51b5" />
+            <WifiIcon width="80%" height="auto" fill={props.color} />
           </CardMedia>
           <CardHeader
             titleTypographyProps={{ variant: "h6" }}

@@ -28,7 +28,7 @@ const useStyles = makeStyles({
   }
 });
 
-const HairdryerCard = () => {
+const HairdryerCard = props => {
   const classes = useStyles();
   return (
     <div>
@@ -41,7 +41,7 @@ const HairdryerCard = () => {
           }}
         >
           <CardMedia>
-            <HairdryerIcon width="80%" height="80%" fill="#3f51b5" />
+            <HairdryerIcon width="80%" height="80%" fill={props.color} />
           </CardMedia>
           <CardHeader
             titleTypographyProps={{ variant: "h6" }}

@@ -24,7 +24,7 @@ const useStyles = makeStyles({
   }
 });
 
-const RefrigeratorCard = () => {
+const RefrigeratorCard = props => {
   const classes = useStyles();
   return (
     <div>
@@ -37,7 +37,7 @@ const RefrigeratorCard = () => {
           }}
         >
           <CardMedia>
-            <RefrigeratorIcon width="80%" height="auto" fill="#3f51b5" />
+            <RefrigeratorIcon width="80%" height="auto" fill={props.color} />
           </CardMedia>
           <CardHeader
             titleTypographyProps={{ variant: "h6" }}

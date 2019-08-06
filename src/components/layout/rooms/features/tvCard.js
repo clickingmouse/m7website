@@ -28,7 +28,7 @@ const useStyles = makeStyles({
   }
 });
 
-const TvCard = () => {
+const TvCard = props => {
   const classes = useStyles();
   return (
     <div>
@@ -41,7 +41,7 @@ const TvCard = () => {
           }}
         >
           <CardMedia>
-            <TelevisionIcon width="80%" height="auto" fill="#3f51b5" />
+            <TelevisionIcon width="80%" height="auto" fill={props.color} />
           </CardMedia>
           <CardHeader
             titleTypographyProps={{ variant: "h6" }}

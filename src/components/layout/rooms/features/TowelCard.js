@@ -29,7 +29,7 @@ const useStyles = makeStyles({
   }
 });
 
-const TowelCard = () => {
+const TowelCard = props => {
   const classes = useStyles();
   return (
     <div>
@@ -42,7 +42,7 @@ const TowelCard = () => {
           }}
         >
           <CardMedia>
-            <TowelIcon width="80%" height="auto" fill="#3f51b5" />
+            <TowelIcon width="80%" height="auto" fill={props.color} />
           </CardMedia>
           <CardHeader
             titleTypographyProps={{ variant: "h6" }}

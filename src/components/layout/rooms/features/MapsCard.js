@@ -25,7 +25,7 @@ const useStyles = makeStyles({
   }
 });
 
-const MapsCard = () => {
+const MapsCard = props => {
   const classes = useStyles();
   return (
     <div>
@@ -38,7 +38,7 @@ const MapsCard = () => {
           }}
         >
           <CardMedia>
-            <MapsIcon width="80%" height="auto" fill="#3f51b5" />
+            <MapsIcon width="80%" height="auto" fill={props.color} />
           </CardMedia>
           <CardHeader
             titleTypographyProps={{ variant: "h6" }}

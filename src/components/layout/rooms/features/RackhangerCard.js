@@ -24,7 +24,7 @@ const useStyles = makeStyles({
   }
 });
 
-const RackhangerCard = () => {
+const RackhangerCard = props => {
   const classes = useStyles();
   return (
     <div>
@@ -37,7 +37,7 @@ const RackhangerCard = () => {
           }}
         >
           <CardMedia>
-            <RackhangerIcon width="80%" height="auto" fill="#3f51b5" />
+            <RackhangerIcon width="80%" height="auto" fill={props.color} />
           </CardMedia>
           <CardHeader
             titleTypographyProps={{ variant: "h6" }}

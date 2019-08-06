@@ -24,7 +24,7 @@ const useStyles = makeStyles({
   }
 });
 
-const KettleCard = () => {
+const KettleCard = props => {
   const classes = useStyles();
   return (
     <div>
@@ -37,7 +37,7 @@ const KettleCard = () => {
           }}
         >
           <CardMedia>
-            <KettleIcon width="80%" height="auto" fill="#3f51b5" />
+            <KettleIcon width="80%" height="auto" fill={props.color} />
           </CardMedia>
           <CardHeader
             titleTypographyProps={{ variant: "h6" }}

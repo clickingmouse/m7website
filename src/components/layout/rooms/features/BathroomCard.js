@@ -29,7 +29,7 @@ const useStyles = makeStyles({
   }
 });
 
-const BathroomCard = () => {
+const BathroomCard = props => {
   const classes = useStyles();
   return (
     <div>
@@ -42,7 +42,7 @@ const BathroomCard = () => {
           }}
         >
           <CardMedia>
-            <BathIcon width="80%" height="auto" fill="#3f51b5" />
+            <BathIcon width="80%" height="auto" fill={props.color} />
           </CardMedia>
           <CardHeader
             titleTypographyProps={{ variant: "h6" }}
