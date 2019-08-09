@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
     //backgroundColor: footerPrimary
   },
   wrapper: {
-    backgroundColor: footerPrimary,
+    backgroundColor: "#00838f",
     height: "100%"
     //marginTop: theme.spacing(1),
     // marginBottom: theme.spacing(2),
