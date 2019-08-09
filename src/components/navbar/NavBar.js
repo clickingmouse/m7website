@@ -49,18 +49,24 @@ const NavBar = () => {
           </Link>
         </Button>
         <Button color="inherit">
-          <Link smooth to="/#rooms">
+          <Link smooth to="/#rooms" className={classes.a}>
             Rooms
           </Link>
         </Button>
         <Button color="inherit">
-          <Link smooth to="/#here">
+          <Link smooth to="/#here" className={classes.a}>
             Getting Here
           </Link>
         </Button>
-        <Button color="inherit">Around Us</Button>
-        <Button color="inherit">Touristripedia</Button>
-        <Button color="inherit">Going To</Button>
+        <Button color="inherit" className={classes.a}>
+          Around Us
+        </Button>
+        <Button color="inherit" className={classes.a}>
+          Touristripedia
+        </Button>
+        <Button color="inherit" className={classes.a}>
+          Going To
+        </Button>
         <Link to="/faq">
           <Button color="inherit">FAQ</Button>
         </Link>
