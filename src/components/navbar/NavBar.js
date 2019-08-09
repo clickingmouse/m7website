@@ -8,7 +8,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import { makeStyles } from "@material-ui/core/styles";
 //import { Link } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
-
+import cyan from "@material-ui/core/colors/cyan";
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
@@ -19,6 +19,10 @@ const useStyles = makeStyles(theme => ({
   title: {
     flexGrow: 1
   },
+  appbar: {
+    backgroundColor: "#00838f"
+    //    color: { cyan }
+  },
   a: { color: "#fff" },
   ":hover": { color: "#00F" }
 }));
@@ -26,7 +30,7 @@ const useStyles = makeStyles(theme => ({
 const NavBar = () => {
   const classes = useStyles();
   return (
-    <AppBar color="primary" position="fixed">
+    <AppBar color="primary" position="fixed" className={classes.appbar}>
       <Toolbar>
         <IconButton
           edge="start"

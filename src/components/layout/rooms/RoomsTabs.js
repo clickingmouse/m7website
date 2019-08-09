@@ -77,7 +77,7 @@ const RoomsTabs = () => {
           <Tab
             titleTypographyProps={{ variant: "h6" }}
             style={{ color: "#3f51b5" }}
-            label="Family Retreat"
+            label="The Pack"
             icon={<FamilyIcon width="25%" fill="#3f51b5" />}
           />
         </Tabs>
