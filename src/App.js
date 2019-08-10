@@ -6,6 +6,7 @@ import OurRooms from "./components/layout/rooms/OurRooms";
 import Faq from "./components/layout/faq/Faq";
 //import GettingHere from "./components/layout/location/GettingHere";
 //import AroundUs from "./components/layout/activities/AroundUs";
+import PostsSection from "./components/layout/posts/PostsSection";
 import Footer from "./components/layout/footer/Footer";
 //import Contact from "./components/layout/contact/Contact";
 import Contact2 from "./components/layout/contact/Contact2";
@@ -26,6 +27,7 @@ class App extends Component {
         <Route exact path="/" component={FerryParallax} />
         <Route exact path="/" component={Contact2} />
         <Route path="/faq" component={Faq} />
+        <Route exact path="/" component={PostsSection} />
         <Route path="/" component={Footer} />
       </div>
     );

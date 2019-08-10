@@ -97,7 +97,7 @@ const RoomsTabs = () => {
         </TabContainer>
 
         <TabContainer dir={theme.direction}>
-          Item Three
+          <Paper>{/***/}</Paper>
           <FamilyRooms />
         </TabContainer>
       </SwipeableViews>

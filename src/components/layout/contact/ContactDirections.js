@@ -30,6 +30,7 @@ const ContactDirections = () => {
 
   const handleChange = panel => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
+    // change state for map here
   };
 
   return (
