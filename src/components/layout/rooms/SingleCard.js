@@ -44,14 +44,14 @@ const SingleCard = () => {
             <List>
               <ListItem>
                 <ListItemIcon>
-                  <i class="fa fa-caret-right" aria-hidden="true" />
+                  <i class="fas fa-plane" />
                 </ListItemIcon>
                 <ListItemText primary="Best Seller" />
               </ListItem>
               <Divider />
               <ListItem>
                 <ListItemIcon>
-                  <i class="fa fa-caret-right" aria-hidden="true" />
+                  <i class="fas fa-plane" />
                 </ListItemIcon>
                 <ListItemText primary="2 meter bed" />
               </ListItem>

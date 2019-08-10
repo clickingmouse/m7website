@@ -68,7 +68,9 @@ const NavBar = () => {
           Going To
         </Button>
         <Link to="/faq">
-          <Button color="inherit">FAQ</Button>
+          <Button color="inherit" className={classes.a}>
+            FAQ
+          </Button>
         </Link>
       </Toolbar>
     </AppBar>
