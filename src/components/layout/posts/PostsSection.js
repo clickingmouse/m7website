@@ -5,6 +5,11 @@ import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
+
+import AppsPost from "./featuredPosts/AppsPost";
+import BreakfastPost from "./featuredPosts/BreakfastPost";
+import SiuYehPost from "./featuredPosts/SiuYehPost";
+import SupermarketPost from "./featuredPosts/SupermarketPost";
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
@@ -20,22 +25,31 @@ const PostsSection = () => {
   return (
     <div className={classes.root}>
       <Container maxWidth="lg">
-        <center>-=FEATURED POSTS=-</center>
         <Grid container spacing={3}>
           <Grid item xs={12}>
-            <Paper className={classes.paper}>xs=12</Paper>
+            <Paper className={classes.paper}>
+              <center>-=FEATURED POSTS=-</center>
+            </Paper>
           </Grid>
           <Grid item xs={3}>
-            <Paper className={classes.paper}>xs=3</Paper>
+            <Paper className={classes.paper}>
+              <AppsPost />
+            </Paper>
           </Grid>
           <Grid item xs={3}>
-            <Paper className={classes.paper}>xs=3</Paper>
+            <Paper className={classes.paper}>
+              <SupermarketPost />
+            </Paper>
           </Grid>
           <Grid item xs={3}>
-            <Paper className={classes.paper}>xs=3</Paper>
+            <Paper className={classes.paper}>
+              <BreakfastPost />
+            </Paper>
           </Grid>
           <Grid item xs={3}>
-            <Paper className={classes.paper}>xs=3</Paper>
+            <Paper className={classes.paper}>
+              <SiuYehPost />
+            </Paper>
           </Grid>
         </Grid>
       </Container>
