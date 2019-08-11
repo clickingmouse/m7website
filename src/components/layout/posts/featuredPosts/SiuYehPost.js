@@ -28,12 +28,24 @@ const SiuYehPost = () => {
           title="Siy Yeh"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Siu Yeh
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="h2"
+            style={{ textAlign: "left" }}
+          >
+            Siu yeh
           </Typography>
+          <hr />
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            Siu yeh (Chinese: 宵夜 / 消夜; pinyin: Xiāoyè), also known as yexiao
+            (夜宵; pinyin: yèxiāo), is a late night meal in the food culture of
+            Hong Kong, Taiwan, and some parts of southern mainland China. It
+            comes after dinner, and is similar to supper. Mealtime may start
+            from about 9pm onwards until 4am, which would be early morning yum
+            cha time. It can range anywhere from a snack to a full-fledged meal.
+            For people working late night shifts, siu yeh is also associated
+            with their post-midnight meals.
           </Typography>
         </CardContent>
       </CardActionArea>

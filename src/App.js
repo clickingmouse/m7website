@@ -10,6 +10,7 @@ import PostsSection from "./components/layout/posts/PostsSection";
 import Footer from "./components/layout/footer/Footer";
 //import Contact from "./components/layout/contact/Contact";
 import Contact2 from "./components/layout/contact/Contact2";
+import PostsPanel from "./components/layout/posts/PostsPanel";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import "./App.css";
@@ -27,6 +28,7 @@ class App extends Component {
         <Route exact path="/" component={FerryParallax} />
         <Route exact path="/" component={Contact2} />
         <Route path="/faq" component={Faq} />
+        <Route path="/posts" component={PostsPanel} />
         <Route exact path="/" component={PostsSection} />
         <Route path="/" component={Footer} />
       </div>
