@@ -12,6 +12,7 @@ import Footer from "./components/layout/footer/Footer";
 import Contact2 from "./components/layout/contact/Contact2";
 import PostsPanel from "./components/layout/posts/PostsPanel";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Switch } from "react-router-dom";
 
 import "./App.css";
 //import LocationParallax from "./components/layout/location/LocationParallax";

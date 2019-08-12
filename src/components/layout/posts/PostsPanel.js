@@ -12,6 +12,8 @@ import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 //  apiKey: "AIzaSyBKEJmsbIRDqz6CvaLrBZ0jJzqbhfC1N4g",
 //  authDomain: "m7website-d2a30.firebaseapp.com"
 //});
+import PostsAppBar from "./dashboard/menubar/PostsAppBar";
+import PostsDashboard from "./dashboard/PostsDashboard";
 class PostsPanel extends Component {
   constructor(props) {
     super(props);
@@ -37,6 +39,7 @@ class PostsPanel extends Component {
     return (
       <div>
         <h1>-=POST PANEL=-</h1>
+        <PostsAppBar />
         <Container style={{ height: 200 }}>
           <hr />
 
@@ -54,6 +57,7 @@ class PostsPanel extends Component {
             />
           )}
         </Container>
+        <PostsDashboard />
       </div>
     );
   }
