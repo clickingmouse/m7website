@@ -13,10 +13,14 @@ import Contact2 from "./components/layout/contact/Contact2";
 import PostsPanel from "./components/layout/posts/PostsPanel";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Switch } from "react-router-dom";
-
+import PostsDashboard from "../src/components/layout/posts/dashboard/PostsDashboard";
+import PostsDetails from "../src/components/layout/posts/dashboard/PostsDetails";
+import SignIn from "../src/auth/SignIn";
 import "./App.css";
 //import LocationParallax from "./components/layout/location/LocationParallax";
 import FerryParallax from "./components/layout/parallax/FerryParallax";
+
+import CreatePost from "../src/components/layout/posts/dashboard/CreatePost";
 class App extends Component {
   render() {
     console.log(process.env.REACT_APP_TEST);
@@ -29,7 +33,12 @@ class App extends Component {
         <Route exact path="/" component={FerryParallax} />
         <Route exact path="/" component={Contact2} />
         <Route path="/faq" component={Faq} />
-        <Route path="/posts" component={PostsPanel} />
+        <Switch>
+          <Route exact path="/posts" component={PostsPanel} />
+          <Route path="/posts/:id" component={PostsDetails} />
+          <Route path="/signin" component={SignIn} />
+          <Route path="/create" component={CreatePost} />
+        </Switch>
         <Route exact path="/" component={PostsSection} />
         <Route path="/" component={Footer} />
       </div>
