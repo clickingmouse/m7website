@@ -50,7 +50,14 @@ const TwinCard = () => {
                 <ListItemIcon>
                   <i class="fas fa-plane" />
                 </ListItemIcon>
-                <ListItemText primary="2 meter bed" />
+                <ListItemText primary="2 pax" />
+              </ListItem>
+              <Divider />
+              <ListItem>
+                <ListItemIcon>
+                  <i class="fas fa-plane" />
+                </ListItemIcon>
+                <ListItemText primary="2 x standard twin beds" />
               </ListItem>
             </List>
           </Paper>

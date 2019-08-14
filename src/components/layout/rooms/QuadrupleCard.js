@@ -43,14 +43,21 @@ const QuadrupleCard = () => {
                 <ListItemIcon>
                   <i class="fas fa-plane" />
                 </ListItemIcon>
-                <ListItemText primary="Best Seller" />
+                <ListItemText primary="Most Economical" />
               </ListItem>
               <Divider />
               <ListItem>
                 <ListItemIcon>
                   <i class="fas fa-plane" />
                 </ListItemIcon>
-                <ListItemText primary="2 meter bed" />
+                <ListItemText primary="4 pax" />
+              </ListItem>
+              <Divider />
+              <ListItem>
+                <ListItemIcon>
+                  <i class="fas fa-plane" />
+                </ListItemIcon>
+                <ListItemText primary="2 x small double beds" />
               </ListItem>
             </List>
           </Paper>

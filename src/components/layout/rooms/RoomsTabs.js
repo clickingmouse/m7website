@@ -72,7 +72,7 @@ const RoomsTabs = () => {
           <Tab
             titleTypographyProps={{ variant: "h6" }}
             style={{ color: "#3f51b5" }}
-            label="Tango Pair"
+            label="Partners in crime"
             icon={<DuetIcon fill="#3f51b5" />}
           />
           <Tab

@@ -46,14 +46,21 @@ const SingleCard = () => {
                 <ListItemIcon>
                   <i class="fas fa-plane" />
                 </ListItemIcon>
-                <ListItemText primary="Best Seller" />
+                <ListItemText primary="Most Popular" />
               </ListItem>
               <Divider />
               <ListItem>
                 <ListItemIcon>
                   <i class="fas fa-plane" />
                 </ListItemIcon>
-                <ListItemText primary="2 meter bed" />
+                <ListItemText primary="1 pax" />
+              </ListItem>
+              <Divider />
+              <ListItem>
+                <ListItemIcon>
+                  <i class="fas fa-plane" />
+                </ListItemIcon>
+                <ListItemText primary="1 x Standard twin-sized bed" />
               </ListItem>
             </List>
           </Paper>

@@ -43,14 +43,21 @@ const FamilyCard = () => {
                 <ListItemIcon>
                   <i class="fas fa-plane" />
                 </ListItemIcon>
-                <ListItemText primary="Best Seller" />
+                <ListItemText primary="Great for groups" />
               </ListItem>
               <Divider />
               <ListItem>
                 <ListItemIcon>
                   <i class="fas fa-plane" />
                 </ListItemIcon>
-                <ListItemText primary="2 meter bed" />
+                <ListItemText primary="4-5 pax" />
+              </ListItem>
+              <Divider />
+              <ListItem>
+                <ListItemIcon>
+                  <i class="fas fa-plane" />
+                </ListItemIcon>
+                <ListItemText primary="1 x bunk bed; 1 x small double" />
               </ListItem>
             </List>
           </Paper>

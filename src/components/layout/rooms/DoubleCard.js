@@ -43,7 +43,7 @@ const DoubleCard = () => {
                 <ListItemIcon>
                   <i class="fas fa-plane" />
                 </ListItemIcon>
-                <ListItemText primary="Best Seller" />
+                <ListItemText primary="Most Favorite" />
               </ListItem>
               <Divider />
               <ListItem>
@@ -51,6 +51,13 @@ const DoubleCard = () => {
                   <i class="fas fa-plane" />
                 </ListItemIcon>
                 <ListItemText primary="2 meter bed" />
+              </ListItem>
+              <Divider />
+              <ListItem>
+                <ListItemIcon>
+                  <i class="fas fa-plane" />
+                </ListItemIcon>
+                <ListItemText primary="1 x small double bed" />
               </ListItem>
             </List>
           </Paper>

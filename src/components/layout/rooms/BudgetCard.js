@@ -41,7 +41,7 @@ const BudgetCard = () => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Budget
+            Budget (No Window)
           </Typography>
           <Paper>
             <List>
@@ -49,14 +49,21 @@ const BudgetCard = () => {
                 <ListItemIcon>
                   <i class="fas fa-plane" />
                 </ListItemIcon>
-                <ListItemText primary="Best Deal in Town" />
+                <ListItemText primary="Best Value" />
               </ListItem>
               <Divider />
               <ListItem>
                 <ListItemIcon>
                   <i class="fas fa-plane" />
                 </ListItemIcon>
-                <ListItemText primary="Windowless" />
+                <ListItemText primary="One Pax" />
+              </ListItem>
+              <Divider />
+              <ListItem>
+                <ListItemIcon>
+                  <i class="fas fa-plane" />
+                </ListItemIcon>
+                <ListItemText primary="1 x Standard Twin Bed" />
               </ListItem>
             </List>
           </Paper>
