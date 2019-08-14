@@ -35,10 +35,11 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const PostsCard = () => {
+const PostsCard = ({ post }) => {
   const classes = useStyles();
   const theme = useTheme();
-
+  console.log(post.id);
+  const title = ".";
   return (
     <Card className={classes.card}>
       <CardMedia
@@ -49,7 +50,7 @@ const PostsCard = () => {
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
-            - Title -
+            {post.title}
           </Typography>
           <Typography variant="subtitle1" color="textSecondary">
             Mac Miller

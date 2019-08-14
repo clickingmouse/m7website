@@ -28,7 +28,7 @@ class CreatePost extends Component {
             <label htmlFor="title">Title</label>
             <TextField
               id="title"
-              label="Enter some title"
+              label="...title"
               placeholder="...title"
               type="text"
               value={this.state.value}

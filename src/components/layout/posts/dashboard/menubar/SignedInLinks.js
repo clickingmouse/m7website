@@ -5,7 +5,7 @@ const SignedInLinks = () => {
   return (
     <span>
       <Button>
-        <NavLink to="/">New Posts</NavLink>
+        <NavLink to="/create">New Posts</NavLink>
       </Button>
       <Button>
         <NavLink to="/">Log Out</NavLink>

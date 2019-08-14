@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
@@ -21,6 +22,8 @@ const useStyles = makeStyles(theme => ({
 
 class PostsDashboard extends Component {
   render() {
+    //console.log(this.props);
+    const { posts } = this.props;
     //const classes = useStyles();
     return (
       <div className="postsDashboard">
@@ -29,7 +32,7 @@ class PostsDashboard extends Component {
           <Grid container spacing={3}>
             <Grid item sm={7}>
               <Paper>
-                <PostsList />
+                <PostsList posts={posts} />
               </Paper>
             </Grid>
             <Grid item sm={5}>
@@ -44,4 +47,10 @@ class PostsDashboard extends Component {
   }
 }
 
-export default PostsDashboard;
+const mapStateToProps = state => {
+  return {
+    posts: state.post.posts
+  };
+};
+
+export default connect(mapStateToProps)(PostsDashboard);
