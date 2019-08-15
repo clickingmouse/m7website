@@ -31,22 +31,22 @@ const PostsSection = () => {
               <center>-=FEATURED POSTS=-</center>
             </Paper>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item sm={3}>
             <Paper className={classes.paper}>
               <AppsPost />
             </Paper>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item sm={3}>
             <Paper className={classes.paper}>
               <SupermarketPost />
             </Paper>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item sm={3}>
             <Paper className={classes.paper}>
               <BreakfastPost />
             </Paper>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item sm={3}>
             <Paper className={classes.paper}>
               <SiuYehPost />
             </Paper>
