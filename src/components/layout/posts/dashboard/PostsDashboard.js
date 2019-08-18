@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { compose } from "redux";
 import { connect } from "react-redux";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
@@ -8,6 +9,7 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import RecentPosts from "./RecentPosts";
 import PostsList from "./PostsList";
+import { firestoreConnect } from "react-redux-firebase";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -48,9 +50,14 @@ class PostsDashboard extends Component {
 }
 
 const mapStateToProps = state => {
+  console.log(state);
   return {
-    posts: state.post.posts
+    //posts: state.post.posts
+    posts: state.firestore.ordered.posts
   };
 };
 
-export default connect(mapStateToProps)(PostsDashboard);
+export default compose(
+  connect(mapStateToProps),
+  firestoreConnect([{ collection: "posts" }])
+)(PostsDashboard);

@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
-import { signIn } from "../store/actions/authActions";
 import firebase from "firebase";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import Container from "@material-ui/core/Container";
 import TextField from "@material-ui/core/TextField";
-class SignIn extends Component {
+class SignUp extends Component {
   // constructor(props) {
   //   super(props);
   //this.
   state = {
     isSignedIn: false,
     email: "",
-    password: ""
+    password: "",
+    firstName: "",
+    lastName: ""
   };
   // }
   uiConfig = {
@@ -41,13 +41,12 @@ class SignIn extends Component {
     e.preventDefault();
     console.log(e);
     console.log("login submit:", this.state);
-    this.props.signIn(this.state);
+    //this.props.createPost(this.state);
   };
   render() {
-    const { authError } = this.props;
     return (
       <div>
-        <h1>SIGNIN</h1>
+        <h1>SIGN UP</h1>
         <hr />
         <StyledFirebaseAuth
           uiConfig={this.uiConfig}
@@ -76,11 +75,31 @@ class SignIn extends Component {
               onChange={this.handleChange}
               margin="normal"
             />
+
+            <label htmlFor="lastName">Last Name</label>
+            <TextField
+              id="lastName"
+              label="lastName"
+              placeholder="lastName"
+              type="text"
+              value={this.state.value}
+              onChange={this.handleChange}
+              margin="normal"
+            />
+
+            <label htmlFor="firstName">First Name</label>
+            <TextField
+              id="firstName"
+              label="firstName"
+              placeholder="firstName"
+              type="text"
+              value={this.state.value}
+              onChange={this.handleChange}
+              margin="normal"
+            />
+
             <div>
               <button className="btn">LOGIN</button>
-            </div>
-            <div>
-              <center>{authError ? <p>{authError}</p> : null}</center>
             </div>
           </form>
         </Container>
@@ -89,19 +108,4 @@ class SignIn extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    authError: state.auth.authError
-  };
-};
-
-const mapDispatchToProps = dispatch => {
-  return {
-    signIn: creds => dispatch(signIn(creds))
-  };
-};
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(SignIn);
+export default SignUp;

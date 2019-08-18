@@ -16,6 +16,7 @@ import { Switch } from "react-router-dom";
 import PostsDashboard from "../src/components/layout/posts/dashboard/PostsDashboard";
 import PostsDetails from "../src/components/layout/posts/dashboard/PostsDetails";
 import SignIn from "../src/auth/SignIn";
+import SignUp from "../src/auth/SignUp";
 import "./App.css";
 //import LocationParallax from "./components/layout/location/LocationParallax";
 import FerryParallax from "./components/layout/parallax/FerryParallax";
@@ -37,6 +38,7 @@ class App extends Component {
           <Route exact path="/posts" component={PostsPanel} />
           <Route path="/posts/:id" component={PostsDetails} />
           <Route path="/signin" component={SignIn} />
+          <Route path="/signup" component={SignUp} />
           <Route path="/create" component={CreatePost} />
         </Switch>
         <Route exact path="/" component={PostsSection} />

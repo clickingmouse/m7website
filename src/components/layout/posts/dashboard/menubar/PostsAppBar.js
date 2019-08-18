@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -27,9 +28,10 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const PostsAppBar = () => {
+const PostsAppBar = props => {
   const classes = useStyles();
-
+  const { auth } = props;
+  const links = auth.uid ? <SignedInLinks /> : <SignedOutLinks />;
   return (
     <div className={classes.root}>
       <AppBar position="static">
@@ -49,13 +51,17 @@ const PostsAppBar = () => {
           <Button color="inherit" className={classes.dummy}>
             ...
           </Button>
-          <span className={classes.bar}>
-            <SignedOutLinks />
-            <SignedInLinks />
-          </span>
+          <span className={classes.bar}>{links}</span>
         </Toolbar>
       </AppBar>
     </div>
   );
 };
-export default PostsAppBar;
+
+const mapStateToProps = state => {
+  //  console.log(state);
+  return {
+    auth: state.firebase.auth
+  };
+};
+export default connect(mapStateToProps)(PostsAppBar);
