@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-
+import Container from "@material-ui/core/Container";
 import TowelCard from "./features/TowelCard";
 import BottledwaterCard from "./features/BottledwaterCard";
 import AirconCard from "./features/AirconCard";
@@ -29,6 +29,9 @@ import green from "@material-ui/core/colors/green";
 import lightGreen from "@material-ui/core/colors/lightGreen";
 import pink from "@material-ui/core/colors/pink";
 const useStyles = makeStyles(theme => ({
+  paper: {
+    padding: theme.spacing(0, 0)
+  },
   button: {
     margin: theme.spacing(1)
   },
@@ -42,8 +45,7 @@ const RoomsFeature = () => {
   return (
     <div className="row container">
       <h2 className="header">Features</h2>
-
-      <Paper className={classes.paper}>
+      <Container>
         <Grid container spacing={2} style={{ padding: 10 }}>
           <Grid item xs={4} sm={2}>
             <WifiCard color={blue[800]} />
@@ -85,7 +87,7 @@ const RoomsFeature = () => {
             <KettleCard color={red[600]} />
           </Grid>
         </Grid>
-      </Paper>
+      </Container>
     </div>
   );
 };
