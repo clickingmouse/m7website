@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import firebase from "firebase";
+import { signUp } from "../store/actions/authActions";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import Container from "@material-ui/core/Container";
 import TextField from "@material-ui/core/TextField";
@@ -43,10 +44,11 @@ class SignUp extends Component {
     e.preventDefault();
     console.log(e);
     console.log("login submit:", this.state);
+    this.props.signUp(this.state);
     //this.props.createPost(this.state);
   };
   render() {
-    const { auth } = this.props;
+    const { auth, authError } = this.props;
     if (auth.uid) return <Redirect to="/posts" />;
     return (
       <div>
@@ -105,6 +107,9 @@ class SignUp extends Component {
             <div>
               <button className="btn">LOGIN</button>
             </div>
+            <div className="authERR">
+              {authError ? <p>{authError}</p> : null}
+            </div>
           </form>
         </Container>
       </div>
@@ -114,8 +119,17 @@ class SignUp extends Component {
 
 const mapStateToProps = state => {
   return {
-    auth: state.firebase.auth
+    auth: state.firebase.auth,
+    authError: state.auth.authError
   };
 };
 
-export default connect(mapStateToProps)(SignUp);
+const mapDispatchToProps = dispatch => {
+  return {
+    signUp: newUser => dispatch(signUp(newUser))
+  };
+};
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(SignUp);
