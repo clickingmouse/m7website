@@ -4,7 +4,7 @@ import TextField from "@material-ui/core/TextField";
 import FormLabel from "@material-ui/core/FormLabel";
 import { createPost } from "../../../../store/actions/postActions";
 import { connect } from "react-redux";
-import {Redirect} from "react-router-dom"
+import { Redirect } from "react-router-dom";
 class CreatePost extends Component {
   state = {
     title: "",
@@ -22,8 +22,8 @@ class CreatePost extends Component {
   };
 
   render() {
-    const {auth} =this.props;
-    if(!auth.uid) return <Redirect to ='/signin'/>
+    const { auth } = this.props;
+    if (!auth.uid) return <Redirect to="/signin" />;
     return (
       <div>
         <Container>
@@ -66,11 +66,11 @@ class CreatePost extends Component {
   }
 }
 
-const mapStateToPros =(this.state.)=>{
-  return{
-    auth:state.firebase.auth
-  }
-}
+const mapStateToProps = state => {
+  return {
+    auth: state.firebase.auth
+  };
+};
 const mapDispatchToProps = dispatch => {
   return {
     createPost: post => dispatch(createPost(post))

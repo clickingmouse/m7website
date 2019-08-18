@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Redirect } from "react-router-dom";
+import { connect } from "react-redux";
 import firebase from "firebase";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import Container from "@material-ui/core/Container";
@@ -44,6 +46,8 @@ class SignUp extends Component {
     //this.props.createPost(this.state);
   };
   render() {
+    const { auth } = this.props;
+    if (auth.uid) return <Redirect to="/posts" />;
     return (
       <div>
         <h1>SIGN UP</h1>
@@ -108,4 +112,10 @@ class SignUp extends Component {
   }
 }
 
-export default SignUp;
+const mapStateToProps = state => {
+  return {
+    auth: state.firebase.auth
+  };
+};
+
+export default connect(mapStateToProps)(SignUp);

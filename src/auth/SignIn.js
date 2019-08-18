@@ -47,7 +47,7 @@ class SignIn extends Component {
     const { authError } = this.props;
     return (
       <div>
-        <h1>SIGNIN</h1>
+        <h1>PLEASE SIGN IN</h1>
         <hr />
         <StyledFirebaseAuth
           uiConfig={this.uiConfig}
