@@ -1,6 +1,7 @@
 import React from "react";
 import tstArielImg from "../../../images/landing/Tsim_Sha_Tsui_Ariel.jpg";
 const Hero = () => {
+  console.log("tst ariel parallax");
   return (
     <div>
       <div className="parallax-container">

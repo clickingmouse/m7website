@@ -107,7 +107,7 @@ class SignUp extends Component {
             <div>
               <button className="btn">LOGIN</button>
             </div>
-            <div className="authERR">
+            <div className="AuthERR">
               {authError ? <p>{authError}</p> : null}
             </div>
           </form>
