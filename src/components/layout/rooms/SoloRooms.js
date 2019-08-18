@@ -35,20 +35,20 @@ const SoloRooms = () => {
       <Container>
         <Grid container spacing={0}>
           <Grid item xs>
-            <Paper className={classes.paper}>
+            <Container>
               <BudgetCard />
-            </Paper>
+            </Container>
           </Grid>
 
           <Grid item xs>
-            <Paper className={classes.paper}>
+            <Container>
               <SingleCard />
-            </Paper>
+            </Container>
           </Grid>
           <Grid item xs>
-            <Paper className={classes.paper}>
+            <Container>
               <DoubleCard />
-            </Paper>
+            </Container>
           </Grid>
         </Grid>
       </Container>

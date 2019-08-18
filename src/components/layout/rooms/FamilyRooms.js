@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-
+import Container from "@material-ui/core/Container";
 import QuadrupleCard from "./QuadrupleCard";
 import FamilyCard from "./FamilyCard";
 
@@ -29,21 +29,21 @@ const FamilyRooms = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Paper className={classes.paper}>
-        <Grid container spacing={0}>
-          <Grid item xs>
-            <Paper className={classes.paper}>
+      <Container>
+        <Grid container justify="center" spacing={0}>
+          <Grid item sm={4}>
+            <Container>
               <QuadrupleCard />
-            </Paper>
+            </Container>
           </Grid>
 
-          <Grid item xs>
-            <Paper className={classes.paper}>
+          <Grid item sm={4}>
+            <Container>
               <FamilyCard />
-            </Paper>
+            </Container>
           </Grid>
         </Grid>
-      </Paper>
+      </Container>
     </div>
   );
 };

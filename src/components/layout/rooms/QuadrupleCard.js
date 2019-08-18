@@ -37,30 +37,30 @@ const QuadrupleCard = () => {
           <Typography gutterBottom variant="h5" component="h2">
             Quadruple Room
           </Typography>
-          <Paper>
-            <List>
-              <ListItem>
-                <ListItemIcon>
-                  <i class="fas fa-plane" />
-                </ListItemIcon>
-                <ListItemText primary="Most Economical" />
-              </ListItem>
-              <Divider />
-              <ListItem>
-                <ListItemIcon>
-                  <i class="fas fa-plane" />
-                </ListItemIcon>
-                <ListItemText primary="4 pax" />
-              </ListItem>
-              <Divider />
-              <ListItem>
-                <ListItemIcon>
-                  <i class="fas fa-plane" />
-                </ListItemIcon>
-                <ListItemText primary="2 x small double beds" />
-              </ListItem>
-            </List>
-          </Paper>
+
+          <List>
+            <ListItem>
+              <ListItemIcon>
+                <i class="fas fa-plane" />
+              </ListItemIcon>
+              <ListItemText primary="Most Economical" />
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <ListItemIcon>
+                <i class="fas fa-plane" />
+              </ListItemIcon>
+              <ListItemText primary="4 pax" />
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <ListItemIcon>
+                <i class="fas fa-plane" />
+              </ListItemIcon>
+              <ListItemText primary="2 x small double beds" />
+            </ListItem>
+          </List>
+
           <Typography variant="body2" color="textSecondary" component="p">
             ...
           </Typography>

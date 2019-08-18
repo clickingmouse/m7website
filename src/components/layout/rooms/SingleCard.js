@@ -40,30 +40,30 @@ const SingleCard = () => {
           <Typography gutterBottom variant="h5" component="h2">
             Single
           </Typography>
-          <Paper>
-            <List>
-              <ListItem>
-                <ListItemIcon>
-                  <i class="fas fa-plane" />
-                </ListItemIcon>
-                <ListItemText primary="Most Popular" />
-              </ListItem>
-              <Divider />
-              <ListItem>
-                <ListItemIcon>
-                  <i class="fas fa-plane" />
-                </ListItemIcon>
-                <ListItemText primary="1 pax" />
-              </ListItem>
-              <Divider />
-              <ListItem>
-                <ListItemIcon>
-                  <i class="fas fa-plane" />
-                </ListItemIcon>
-                <ListItemText primary="1 x Standard twin-sized bed" />
-              </ListItem>
-            </List>
-          </Paper>
+
+          <List>
+            <ListItem>
+              <ListItemIcon>
+                <i class="fas fa-plane" />
+              </ListItemIcon>
+              <ListItemText primary="Most Popular" />
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <ListItemIcon>
+                <i class="fas fa-plane" />
+              </ListItemIcon>
+              <ListItemText primary="1 pax" />
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <ListItemIcon>
+                <i class="fas fa-plane" />
+              </ListItemIcon>
+              <ListItemText primary="1 x Standard twin-sized bed" />
+            </ListItem>
+          </List>
+
           <Typography variant="body2" color="textSecondary" component="p">
             ...
           </Typography>

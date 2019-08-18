@@ -43,30 +43,30 @@ const BudgetCard = () => {
           <Typography gutterBottom variant="h5" component="h2">
             Budget (No Window)
           </Typography>
-          <Paper>
-            <List>
-              <ListItem>
-                <ListItemIcon>
-                  <i class="fas fa-plane" />
-                </ListItemIcon>
-                <ListItemText primary="Best Value" />
-              </ListItem>
-              <Divider />
-              <ListItem>
-                <ListItemIcon>
-                  <i class="fas fa-plane" />
-                </ListItemIcon>
-                <ListItemText primary="One Pax" />
-              </ListItem>
-              <Divider />
-              <ListItem>
-                <ListItemIcon>
-                  <i class="fas fa-plane" />
-                </ListItemIcon>
-                <ListItemText primary="1 x Standard Twin Bed" />
-              </ListItem>
-            </List>
-          </Paper>
+
+          <List>
+            <ListItem>
+              <ListItemIcon>
+                <i class="fas fa-plane" />
+              </ListItemIcon>
+              <ListItemText primary="Best Value" />
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <ListItemIcon>
+                <i class="fas fa-plane" />
+              </ListItemIcon>
+              <ListItemText primary="One Pax" />
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <ListItemIcon>
+                <i class="fas fa-plane" />
+              </ListItemIcon>
+              <ListItemText primary="1 x Standard Twin Bed" />
+            </ListItem>
+          </List>
+
           <Typography
             variant="body2"
             color="textSecondary"

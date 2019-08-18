@@ -37,30 +37,30 @@ const TwinCard = () => {
           <Typography gutterBottom variant="h5" component="h2">
             Twin Room
           </Typography>
-          <Paper>
-            <List>
-              <ListItem>
-                <ListItemIcon>
-                  <i class="fas fa-plane" />
-                </ListItemIcon>
-                <ListItemText primary="Best Seller" />
-              </ListItem>
-              <Divider />
-              <ListItem>
-                <ListItemIcon>
-                  <i class="fas fa-plane" />
-                </ListItemIcon>
-                <ListItemText primary="2 pax" />
-              </ListItem>
-              <Divider />
-              <ListItem>
-                <ListItemIcon>
-                  <i class="fas fa-plane" />
-                </ListItemIcon>
-                <ListItemText primary="2 x standard twin beds" />
-              </ListItem>
-            </List>
-          </Paper>
+
+          <List>
+            <ListItem>
+              <ListItemIcon>
+                <i class="fas fa-plane" />
+              </ListItemIcon>
+              <ListItemText primary="Best Seller" />
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <ListItemIcon>
+                <i class="fas fa-plane" />
+              </ListItemIcon>
+              <ListItemText primary="2 pax" />
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <ListItemIcon>
+                <i class="fas fa-plane" />
+              </ListItemIcon>
+              <ListItemText primary="2 x standard twin beds" />
+            </ListItem>
+          </List>
+
           <Typography variant="body2" color="textSecondary" component="p">
             ...
           </Typography>

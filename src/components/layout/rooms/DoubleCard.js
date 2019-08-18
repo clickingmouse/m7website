@@ -37,30 +37,30 @@ const DoubleCard = () => {
           <Typography gutterBottom variant="h5" component="h2">
             Double Room
           </Typography>
-          <Paper>
-            <List>
-              <ListItem>
-                <ListItemIcon>
-                  <i class="fas fa-plane" />
-                </ListItemIcon>
-                <ListItemText primary="Most Favorite" />
-              </ListItem>
-              <Divider />
-              <ListItem>
-                <ListItemIcon>
-                  <i class="fas fa-plane" />
-                </ListItemIcon>
-                <ListItemText primary="2 meter bed" />
-              </ListItem>
-              <Divider />
-              <ListItem>
-                <ListItemIcon>
-                  <i class="fas fa-plane" />
-                </ListItemIcon>
-                <ListItemText primary="1 x small double bed" />
-              </ListItem>
-            </List>
-          </Paper>
+
+          <List>
+            <ListItem>
+              <ListItemIcon>
+                <i class="fas fa-plane" />
+              </ListItemIcon>
+              <ListItemText primary="Most Favorite" />
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <ListItemIcon>
+                <i class="fas fa-plane" />
+              </ListItemIcon>
+              <ListItemText primary="2 meter bed" />
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <ListItemIcon>
+                <i class="fas fa-plane" />
+              </ListItemIcon>
+              <ListItemText primary="1 x small double bed" />
+            </ListItem>
+          </List>
+
           <Typography variant="body2" color="textSecondary" component="p">
             ...
           </Typography>

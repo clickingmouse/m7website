@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-
+import Container from "@material-ui/core/Container";
 import DoubleCard from "./DoubleCard";
 import TwinCard from "./TwinCard";
 import QuadrupleCard from "./QuadrupleCard";
@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1
   },
   paper: {
-    padding: theme.spacing(1),
+    padding: theme.spacing(3),
     textAlign: "center",
     color: theme.palette.text.secondary
   },
@@ -30,26 +30,26 @@ const DoubleRooms = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Paper className={classes.paper}>
+      <Container>
         <Grid container spacing={0}>
           <Grid item xs>
-            <Paper className={classes.paper}>
+            <Container>
               <DoubleCard />
-            </Paper>
+            </Container>
           </Grid>
 
           <Grid item xs>
-            <Paper className={classes.paper}>
+            <Container>
               <TwinCard />
-            </Paper>
+            </Container>
           </Grid>
           <Grid item xs>
-            <Paper className={classes.paper}>
+            <Container>
               <QuadrupleCard />
-            </Paper>
+            </Container>
           </Grid>
         </Grid>
-      </Paper>
+      </Container>
     </div>
   );
 };
