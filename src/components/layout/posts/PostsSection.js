@@ -32,24 +32,16 @@ const PostsSection = () => {
             </Paper>
           </Grid>
           <Grid item sm={3}>
-            <Paper className={classes.paper}>
-              <AppsPost />
-            </Paper>
+            <AppsPost />
           </Grid>
           <Grid item sm={3}>
-            <Paper className={classes.paper}>
-              <SupermarketPost />
-            </Paper>
+            <SupermarketPost />
           </Grid>
           <Grid item sm={3}>
-            <Paper className={classes.paper}>
-              <BreakfastPost />
-            </Paper>
+            <BreakfastPost />
           </Grid>
           <Grid item sm={3}>
-            <Paper className={classes.paper}>
-              <SiuYehPost />
-            </Paper>
+            <SiuYehPost />
           </Grid>
         </Grid>
       </Container>
