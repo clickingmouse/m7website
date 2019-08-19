@@ -55,7 +55,7 @@ const Contact = () => {
           </Paper>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <span>Address:</span>{" "}
+          <span>Our Address:</span>
           <p>
             7D Majestic House, 80 Nathan Road, Tsim Sha Tsui, Kowloon, Hong Kong{" "}
           </p>

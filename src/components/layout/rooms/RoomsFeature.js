@@ -44,7 +44,9 @@ const RoomsFeature = () => {
   const classes = useStyles();
   return (
     <div className="row container">
-      <h2 className="header">Features</h2>
+      <h3 className="header" style={{ textAlign: "center" }}>
+        Features
+      </h3>
       <Container>
         <Grid container spacing={2} style={{ padding: 10 }}>
           <Grid item xs={4} sm={2}>
