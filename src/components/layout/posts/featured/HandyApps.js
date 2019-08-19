@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
-export default function HandyApps() {
+const HandyApps = () => {
   return (
     <div>
-      Handy App
+      <h3 style={{ textAlign: "center" }}>Handy App</h3>
     </div>
-  )
-}
+  );
+};
 
-export default HandyApps
+export default HandyApps;

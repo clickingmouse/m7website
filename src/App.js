@@ -17,6 +17,7 @@ import PostsDashboard from "../src/components/layout/posts/dashboard/PostsDashbo
 import PostsDetails from "../src/components/layout/posts/dashboard/PostsDetails";
 import SignIn from "../src/auth/SignIn";
 import SignUp from "../src/auth/SignUp";
+import HandyApps from "./components/layout/posts/featured/HandyApps";
 import "./App.css";
 //import LocationParallax from "./components/layout/location/LocationParallax";
 import FerryParallax from "./components/layout/parallax/FerryParallax";
@@ -36,6 +37,11 @@ class App extends Component {
         <Route path="/faq" component={Faq} />
         <Switch>
           <Route exact path="/posts" component={PostsPanel} />
+          <Route
+            exact
+            path="/posts/featured/handy-apps"
+            component={HandyApps}
+          />
           <Route path="/posts/:id" component={PostsDetails} />
           <Route path="/signin" component={SignIn} />
           <Route path="/signup" component={SignUp} />
