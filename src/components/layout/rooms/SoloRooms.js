@@ -33,7 +33,7 @@ const SoloRooms = () => {
   return (
     <div className={classes.root}>
       <Container>
-        <Grid container spacing={0}>
+        <Grid container spacing={3}>
           <Grid item xs>
             <Container>
               <BudgetCard />

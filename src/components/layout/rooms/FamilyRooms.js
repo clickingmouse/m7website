@@ -30,7 +30,7 @@ const FamilyRooms = () => {
   return (
     <div className={classes.root}>
       <Container>
-        <Grid container justify="center" spacing={0}>
+        <Grid container justify="center" spacing={3}>
           <Grid item sm={4}>
             <Container>
               <QuadrupleCard />
