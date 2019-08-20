@@ -7,7 +7,7 @@ import openRiceAppIcon from "../../../../images/posts/apps/openRice.png";
 import wifiHKAppIcon from "../../../../images/posts/apps/wifiHK.jpeg";
 import hkMyGuideAppIcon from "../../../../images/posts/apps/hkMyGuide.png";
 import mtrAppIcon from "../../../../images/posts/apps/mtr.png";
-import hkTaxi from "../../../../images/posts/apps/hkTaxi.png";
+import hkTaxiAppIcon from "../../../../images/posts/apps/hkTaxi.png";
 import gogoVanAppIcon from "../../../../images/posts/apps/gogoVan.png";
 import lalaMoveAppIcon from "../../../../images/posts/apps/lalaMove.png";
 
@@ -39,7 +39,43 @@ const HandyApps = () => {
 
           <Grid item xs={12} sm={6}>
             <AppCard
-              appIcon={myFlightAppIcon}
+              title="Open Rice App"
+              appIcon={openRiceAppIcon}
+              appDescription={appDescription}
+            />
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <AppCard
+              title="MTR App"
+              appIcon={mtrAppIcon}
+              appDescription={appDescription}
+            />
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <AppCard
+              title="HK My Guide App"
+              appIcon={hkMyGuideAppIcon}
+              appDescription={appDescription}
+            />
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <AppCard
+              title="HK Taxi App"
+              appIcon={hkTaxiAppIcon}
+              appDescription={appDescription}
+            />
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <AppCard
+              title="Go Go Van App"
+              appIcon={gogoVanAppIcon}
+              appDescription={appDescription}
+            />
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <AppCard
+              title="Lala Move App"
+              appIcon={lalaMoveAppIcon}
               appDescription={appDescription}
             />
           </Grid>
