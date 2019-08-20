@@ -18,6 +18,7 @@ import PostsDetails from "../src/components/layout/posts/dashboard/PostsDetails"
 import SignIn from "../src/auth/SignIn";
 import SignUp from "../src/auth/SignUp";
 import HandyApps from "./components/layout/posts/featured/HandyApps";
+import Groceries from "./components/layout/posts/featured/Groceries";
 import "./App.css";
 //import LocationParallax from "./components/layout/location/LocationParallax";
 import FerryParallax from "./components/layout/parallax/FerryParallax";
@@ -42,6 +43,7 @@ class App extends Component {
             path="/posts/featured/handy-apps"
             component={HandyApps}
           />
+          <Route exact path="/posts/featured/groceries" component={Groceries} />
           <Route path="/posts/:id" component={PostsDetails} />
           <Route path="/signin" component={SignIn} />
           <Route path="/signup" component={SignUp} />
