@@ -39,14 +39,14 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const AppCard = props => {
+const AppCard = () => {
   const classes = useStyles();
   const theme = useTheme();
   return (
     <div>
       <Card className={classes.card}>
         <CardMedia>
-          <img src={props.appIcon} alt="" height="160" width="160" />
+          <img src={myFlightAppIcon} alt="" height="160" width="160" />
         </CardMedia>
         <div className={classes.details}>
           <CardContent className={classes.content}>
@@ -54,7 +54,10 @@ const AppCard = props => {
               "HKG My Flight" Mobile App
             </Typography>
             <Typography variant="subtitle1" color="textSecondary">
-              {props.appDescription}
+              Mac Miller Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Molestias voluptates incidunt voluptatem magni consequuntur
+              assumenda perspiciatis officiis dolor earum ipsa vero soluta
+              ipsam, unde consequatur quidem quia ex qui eius!
             </Typography>
           </CardContent>
         </div>
