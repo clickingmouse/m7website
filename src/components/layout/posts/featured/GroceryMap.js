@@ -9,11 +9,39 @@ class GroceryMap extends Component {
   }
 
   onScriptLoad() {
+    const directionsService = new window.google.maps.DirectionsService();
+    const directionsDisplay = new window.google.maps.DirectionsRenderer();
+    var M7 = new window.google.maps.LatLng(
+      22.298606176308525,
+      114.17228420963512
+    );
+    var parknshop = new window.google.maps.LatLng(22.298201, 114.172474);
     const map = new window.google.maps.Map(
       document.getElementById(this.props.id),
       this.props.options
     );
     this.props.onMapLoad(map);
+    console.log("map directioning");
+    directionsDisplay.setMap(map);
+    console.log("finished map directions");
+    ///////////////////////////////////////////
+    function calcRoute() {
+      //var start = document.getElementById("start").value;
+      //var end = document.getElementById("end").value;
+      var request = {
+        origin: M7,
+        destination: parknshop,
+        travelMode: "WALKING"
+      };
+      directionsService.route(request, function(result, status) {
+        if (status == "OK") {
+          directionsDisplay.setDirections(result);
+        }
+      });
+    }
+    calcRoute();
+
+    ///////////////////////////////////////////
   }
 
   componentDidMount() {
