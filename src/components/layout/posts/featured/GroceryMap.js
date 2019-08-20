@@ -15,7 +15,8 @@ class GroceryMap extends Component {
       22.298606176308525,
       114.17228420963512
     );
-    var parknshop = new window.google.maps.LatLng(22.298201, 114.172474);
+    console.log(this.props.destinationcoords.lat);
+    var parknshop = new window.google.maps.LatLng(this.props.destinationcoords);
     const map = new window.google.maps.Map(
       document.getElementById(this.props.id),
       this.props.options
