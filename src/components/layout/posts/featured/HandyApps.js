@@ -33,7 +33,9 @@ const HandyApps = () => {
             <AppCard
               title="HKG My Flight App"
               appIcon={myFlightAppIcon}
-              appDescription={appDescription}
+              appDescription={
+                "An app by the Hong Kong international airport.  This app aiport related info including, floor plan, various transportation location, flight schedules... etc. "
+              }
             />
           </Grid>
 
@@ -41,42 +43,54 @@ const HandyApps = () => {
             <AppCard
               title="Open Rice App"
               appIcon={openRiceAppIcon}
-              appDescription={appDescription}
+              appDescription={
+                "Restaurants Yelp, seems to be popular in Asia, restaurants are categorized pretty impressively."
+              }
             />
           </Grid>
           <Grid item xs={12} sm={6}>
             <AppCard
               title="MTR App"
               appIcon={mtrAppIcon}
-              appDescription={appDescription}
+              appDescription={
+                "App from HK's mtrc (metro train), good place to lookup mtr stations, travel time, schedules, etc "
+              }
             />
           </Grid>
           <Grid item xs={12} sm={6}>
             <AppCard
               title="HK My Guide App"
               appIcon={hkMyGuideAppIcon}
-              appDescription={appDescription}
+              appDescription={
+                "An app by the Hong Kong Tourism board, lots of touristy useful information, history, self guided guides, tips, ...etc"
+              }
             />
           </Grid>
           <Grid item xs={12} sm={6}>
             <AppCard
               title="HK Taxi App"
               appIcon={hkTaxiAppIcon}
-              appDescription={appDescription}
+              appDescription={
+                "like many places, paying an unlicensed vehicle for private personal commuting service is debatably technially illegal.  This app is an attempt to fill the 'void'.  Personally, during peak hours, app or no app, can't find a cab when you need one"
+              }
             />
           </Grid>
           <Grid item xs={12} sm={6}>
             <AppCard
               title="Go Go Van App"
               appIcon={gogoVanAppIcon}
-              appDescription={appDescription}
+              appDescription={
+                "like its counterpart/competitor - lalamove, this app's main service is to provide help in the transportion of 'goods', obviously this app wont stand out if they do not allow courier to 'ride along'.  They reserve the right to deny service to anyone without a parcel"
+              }
             />
           </Grid>
           <Grid item xs={12} sm={6}>
             <AppCard
               title="Lala Move App"
               appIcon={lalaMoveAppIcon}
-              appDescription={appDescription}
+              appDescription={
+                "like its counterpart/competitor - lalamove, this app's main service is to provide help in the transportion of 'goods', obviously this app wont stand out if they do not allow courier to 'ride along'.  They reserve the right to deny service to anyone without a parcel"
+              }
             />
           </Grid>
         </Grid>
