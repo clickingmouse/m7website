@@ -51,7 +51,7 @@ const AppCard = props => {
         <div className={classes.details}>
           <CardContent className={classes.content}>
             <Typography component="h5" variant="h5">
-              "HKG My Flight" Mobile App
+              {props.title}
             </Typography>
             <Typography variant="subtitle1" color="textSecondary">
               {props.appDescription}
