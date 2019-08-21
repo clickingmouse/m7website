@@ -32,8 +32,9 @@ const BreakfastPost = () => {
             Breakfast for the early bird (or jet-lagged)
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            Hong Kong is also known as a city of the night, the city doesnt wake
+            up till 10:30 AM. It's not uncommon to see a coffee house not open
+            at nine; Here are some morning options...
           </Typography>
         </CardContent>
       </CardActionArea>

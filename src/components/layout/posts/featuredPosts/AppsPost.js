@@ -32,8 +32,8 @@ const AppsPost = () => {
             Handy Apps
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            When in Rome, use what the romans use. Although some apps are
+            globally recognizeds, some apps do have their niche locally.
           </Typography>
         </CardContent>
       </CardActionArea>

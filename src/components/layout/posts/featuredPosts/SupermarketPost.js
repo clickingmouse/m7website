@@ -32,8 +32,10 @@ const SupermarketPost = () => {
             Nearyby supermarkets
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            Usually the first thing after airport and check-in is to head off to
+            restock one's supplies, often in a foreign land without your the
+            familiar Safeway, Carrefour, or Tesco, its easy to lose one
+            bearings. Here are some options to help travellers off their feet
           </Typography>
         </CardContent>
       </CardActionArea>
