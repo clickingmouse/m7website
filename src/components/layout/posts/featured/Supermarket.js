@@ -63,8 +63,8 @@ const Supermarket = props => {
           </Grid>
           <Grid item xs={12} sm={3}>
             <GroceryMap
-              id="myMap3"
-              destinationcoords={parknshopcoords}
+              id={props.id}
+              destinationcoords={props.coords}
               options={{
                 center: { lat: 22.298606176308525, lng: 114.17228420963512 },
                 zoom: 17

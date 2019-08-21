@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -19,24 +21,31 @@ const AppsPost = () => {
 
   return (
     <Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt="apps"
-          height="140"
-          image={appsImg}
-          title="Handy Apps"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Handy Apps
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            When in Rome, use what the romans use. Although some apps are
-            globally recognizeds, some apps do have their niche locally.
-          </Typography>
-        </CardContent>
-      </CardActionArea>
+      <Link to={"/posts/featured/handy-apps"} color="black">
+        <CardActionArea>
+          <CardMedia
+            component="img"
+            alt="apps"
+            height="140"
+            image={appsImg}
+            title="Handy Apps"
+          />
+          <CardContent>
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="h2"
+              color="textPrimary"
+            >
+              Handy Apps
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              When in Rome, use what the romans use. Although some apps are
+              globally recognizeds, some apps do have their niche locally.
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Link>
       <CardActions>
         <Button size="small" color="primary">
           Share

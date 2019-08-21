@@ -8,6 +8,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import breakfastImg from "../../../../images/posts/featured/breakfast.jpg";
+import { Link } from "react-router-dom";
 const useStyles = makeStyles({
   card: {
     maxWidth: 345
@@ -32,9 +33,9 @@ const BreakfastPost = () => {
             Breakfast for the early bird (or jet-lagged)
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Hong Kong is also known as a city of the night, the city doesnt wake
-            up till 10:30 AM. It's not uncommon to see a coffee house not open
-            at nine; Here are some morning options...
+            Hong Kong is also known as the city of the night, the city doesn't
+            wake up till 10:30 AM. It's not uncommon to see a coffee house not
+            open at nine; Here are some morning options...
           </Typography>
         </CardContent>
       </CardActionArea>
