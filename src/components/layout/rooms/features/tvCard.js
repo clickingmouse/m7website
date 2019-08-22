@@ -33,7 +33,7 @@ const TvCard = props => {
   return (
     <div>
       <Card className={classes.card}>
-        <CardActionArea
+        <div
           style={{
             display: "flex",
             flexDirection: "column",
@@ -48,7 +48,7 @@ const TvCard = props => {
             style={{ padding: 0, color: "#3f51b5" }}
             title="Television"
           />
-        </CardActionArea>
+        </div>
       </Card>
     </div>
   );

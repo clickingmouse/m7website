@@ -34,7 +34,7 @@ const BathroomCard = props => {
   return (
     <div>
       <Card className={classes.card}>
-        <CardActionArea
+        <div
           style={{
             display: "flex",
             flexDirection: "column",
@@ -49,7 +49,7 @@ const BathroomCard = props => {
             style={{ padding: 0, color: "#3f51b5" }}
             title="Bathroom"
           />
-        </CardActionArea>
+        </div>
       </Card>
     </div>
   );

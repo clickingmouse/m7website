@@ -29,7 +29,7 @@ const RefrigeratorCard = props => {
   return (
     <div>
       <Card className={classes.card}>
-        <CardActionArea
+        <div
           style={{
             display: "flex",
             flexDirection: "column",
@@ -44,7 +44,7 @@ const RefrigeratorCard = props => {
             style={{ padding: 0, color: "#3f51b5" }}
             title="Refrigerator"
           />
-        </CardActionArea>
+        </div>
       </Card>
     </div>
   );

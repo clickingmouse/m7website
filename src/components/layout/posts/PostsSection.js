@@ -5,6 +5,7 @@ import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
+import { Link } from "react-router-dom";
 
 import AppsPost from "./featuredPosts/AppsPost";
 import BreakfastPost from "./featuredPosts/BreakfastPost";

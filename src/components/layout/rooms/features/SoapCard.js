@@ -29,7 +29,7 @@ const SoapCard = () => {
   return (
     <div>
       <Card className={classes.card}>
-        <CardActionArea
+        <div
           style={{
             display: "flex",
             flexDirection: "column",
@@ -40,7 +40,7 @@ const SoapCard = () => {
             <SoapIcon width="80%" height="auto" fill="#3f51b5" />
           </CardMedia>
           <CardHeader title="Liquid Soap" style={{ padding: 0 }} />
-        </CardActionArea>
+        </div>
       </Card>
     </div>
   );
