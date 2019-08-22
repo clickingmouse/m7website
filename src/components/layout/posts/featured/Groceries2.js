@@ -50,7 +50,7 @@ const Groceries = () => {
                       destinationcoords={wellcomeGeoCoords}
                       options={{
                         center: {
-                          lat: 22.298606176308525,
+                          lat: 22.2995,
                           lng: 114.17228420963512
                         },
                         zoom: 17
@@ -62,16 +62,36 @@ const Groceries = () => {
                             lng: 114.17228420963512
                           },
                           map: map,
-                          title: "Hello !"
+                          title: "Majestic House"
                         });
-                        var marker2 = new window.google.maps.Marker({
+                        var parknshopMarker2 = new window.google.maps.Marker({
                           icon: {
                             url:
                               "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
                           },
                           position: parknshopGeoCoords,
                           map: map,
-                          title: "Hello !"
+                          title: "Park n'shop"
+                        });
+
+                        var wellcomMarker = new window.google.maps.Marker({
+                          icon: {
+                            url:
+                              "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png"
+                          },
+                          position: wellcomeGeoCoords,
+                          map: map,
+                          title: "Wellcome"
+                        });
+
+                        var vanguardMarker2 = new window.google.maps.Marker({
+                          icon: {
+                            url:
+                              "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+                          },
+                          position: vanguardGeoCoords,
+                          map: map,
+                          title: "Vanguard !"
                         });
                       }}
                     />
