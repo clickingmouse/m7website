@@ -28,17 +28,17 @@ const SingleCard = () => {
 
   return (
     <Card className={classes.card}>
-      <CardActionArea>
+      <div>
         <CardMedia
           component="img"
-          alt="Contemplative Reptile"
+          alt="single room"
           height="140"
           image={singleImg}
-          title="Contemplative Reptile"
+          title="Single Room with Private Bathroom"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Single
+            Single Room
           </Typography>
 
           <List>
@@ -60,7 +60,7 @@ const SingleCard = () => {
               <ListItemIcon>
                 <i class="fas fa-plane" />
               </ListItemIcon>
-              <ListItemText primary="1 x Standard twin-sized bed" />
+              <ListItemText primary="1 x standard twin bed" />
             </ListItem>
           </List>
 
@@ -68,13 +68,10 @@ const SingleCard = () => {
             ...
           </Typography>
         </CardContent>
-      </CardActionArea>
+      </div>
       <CardActions>
         <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+          Book Now!
         </Button>
       </CardActions>
     </Card>

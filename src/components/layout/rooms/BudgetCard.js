@@ -31,17 +31,17 @@ const BudgetCard = () => {
 
   return (
     <Card className={classes.card}>
-      <CardActionArea>
+      <div>
         <CardMedia
           component="img"
-          alt="Contemplative Reptile"
+          alt="budget room"
           height="140"
           image={budgetImg}
-          title="Contemplative Reptile"
+          title="Budget Room with Private Bathroom"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Budget (No Window)
+            Budget (no window)
           </Typography>
 
           <List>
@@ -56,32 +56,25 @@ const BudgetCard = () => {
               <ListItemIcon>
                 <i class="fas fa-plane" />
               </ListItemIcon>
-              <ListItemText primary="One Pax" />
+              <ListItemText primary="1 pax" />
             </ListItem>
             <Divider />
             <ListItem>
               <ListItemIcon>
                 <i class="fas fa-plane" />
               </ListItemIcon>
-              <ListItemText primary="1 x Standard Twin Bed" />
+              <ListItemText primary="1 x standard twin bed" />
             </ListItem>
           </List>
 
-          <Typography
-            variant="body2"
-            color="textSecondary"
-            component="subtitle1"
-          >
+          <Typography variant="body2" color="textSecondary" component="p">
             ...
           </Typography>
         </CardContent>
-      </CardActionArea>
+      </div>
       <CardActions>
         <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+          Book Now
         </Button>
       </CardActions>
     </Card>

@@ -25,13 +25,13 @@ const FamilyCard = () => {
 
   return (
     <Card className={classes.card}>
-      <CardActionArea>
+      <div>
         <CardMedia
           component="img"
-          alt="Contemplative Reptile"
+          alt="family room"
           height="140"
           image={familyImg}
-          title="Contemplative Reptile"
+          title="Family Room with Private Bathroom"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -65,13 +65,10 @@ const FamilyCard = () => {
             ...
           </Typography>
         </CardContent>
-      </CardActionArea>
+      </div>
       <CardActions>
         <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+          Book Now!
         </Button>
       </CardActions>
     </Card>

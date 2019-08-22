@@ -25,13 +25,13 @@ const QuadrupleCard = () => {
 
   return (
     <Card className={classes.card}>
-      <CardActionArea>
+      <div>
         <CardMedia
           component="img"
-          alt="Contemplative Reptile"
+          alt="quadruple room"
           height="140"
           image={quadrupleImg}
-          title="Contemplative Reptile"
+          title="Quadruple Room with Private Bathroom"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -65,13 +65,10 @@ const QuadrupleCard = () => {
             ...
           </Typography>
         </CardContent>
-      </CardActionArea>
+      </div>
       <CardActions>
         <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+          Book Now!
         </Button>
       </CardActions>
     </Card>

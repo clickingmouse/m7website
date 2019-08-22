@@ -25,13 +25,13 @@ const DoubleCard = () => {
 
   return (
     <Card className={classes.card}>
-      <CardActionArea>
+      <div>
         <CardMedia
           component="img"
-          alt="Contemplative Reptile"
+          alt="double room"
           height="140"
           image={doubleImg}
-          title="Contemplative Reptile"
+          title="Double Room with Private Bathroom"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -50,7 +50,7 @@ const DoubleCard = () => {
               <ListItemIcon>
                 <i class="fas fa-plane" />
               </ListItemIcon>
-              <ListItemText primary="2 meter bed" />
+              <ListItemText primary="2 pax" />
             </ListItem>
             <Divider />
             <ListItem>
@@ -65,13 +65,10 @@ const DoubleCard = () => {
             ...
           </Typography>
         </CardContent>
-      </CardActionArea>
+      </div>
       <CardActions>
         <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+          Book Now!
         </Button>
       </CardActions>
     </Card>

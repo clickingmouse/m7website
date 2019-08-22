@@ -25,13 +25,13 @@ const TwinCard = () => {
 
   return (
     <Card className={classes.card}>
-      <CardActionArea>
+      <div>
         <CardMedia
           component="img"
-          alt="Contemplative Reptile"
+          alt="twin room"
           height="140"
           image={twinImg}
-          title="Contemplative Reptile"
+          title="Twin Room with Private Bathroom"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -65,13 +65,10 @@ const TwinCard = () => {
             ...
           </Typography>
         </CardContent>
-      </CardActionArea>
+      </div>
       <CardActions>
         <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+          Book Now!
         </Button>
       </CardActions>
     </Card>
