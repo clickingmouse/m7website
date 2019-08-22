@@ -8,6 +8,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import parkNShopImg from "./internationalParkNShop.png";
 import wellcomeImg from "../../../../images/posts/supermarkets/wellcome.png";
 import vanguardImg from "../../../../images/posts/supermarkets/vanguard.png";
+import parknshopLogo from "../../../../images/posts/supermarkets/parknshop-logo.png";
+import wellcomeLogo from "../../../../images/posts/supermarkets/wellcome-logo.jpg";
+import vanguardLogo from "../../../../images/posts/supermarkets/vanguard-logo.png";
 
 import SupermarketCard from "./SupermarketCard";
 import SupermarketMap from "./SupermarketMap";
@@ -19,9 +22,10 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1
   },
   paper: {
-    padding: theme.spacing(1),
+    padding: theme.spacing(2),
     textAlign: "center",
-    color: theme.palette.text.secondary
+    color: theme.palette.text.secondary,
+    flexGrow: 1
   }
 }));
 const Groceries = () => {
@@ -37,14 +41,9 @@ const Groceries = () => {
         <div className={classes.root}>
           <Grid container spacing={1}>
             <Grid container item xs={12} spacing={3}>
-              <Grid item xs={12} sm={2}>
-                <Paper className={classes.paper}>item</Paper>
-              </Grid>
               <Grid item xs={12} sm={8}>
                 <Paper className={classes.paper}>
-                  Google Map Goes Here!
-                  <br />
-                  <div style={{ height: "25vw" }}>
+                  <div style={{ height: "30vw" }}>
                     <SupermarketMap
                       id="supermarkets-map"
                       destinationcoords={wellcomeGeoCoords}
@@ -98,36 +97,32 @@ const Groceries = () => {
                   </div>
                 </Paper>
               </Grid>
-              <Grid item xs={12} sm={2}>
-                <Paper className={classes.paper}>item</Paper>
-              </Grid>
-            </Grid>
 
-            <Grid container item xs={12} spacing={3}>
               <Grid item xs={12} sm={4}>
                 <Paper className={classes.paper}>
                   <SupermarketCard
-                    title="Park n' Shop"
-                    address="123"
-                    summary="Literally just right around the corner"
-                  />
-                </Paper>
-              </Grid>
-              <Grid item xs={12} sm={4}>
-                <Paper className={classes.paper}>
-                  <SupermarketCard
+                    logo={wellcomeLogo}
                     title="Wellcome"
                     address="abc"
                     summary="24 hours!"
                   />
                 </Paper>
-              </Grid>
-              <Grid item xs={12} sm={4}>
+                <br />
                 <Paper className={classes.paper}>
                   <SupermarketCard
+                    logo={vanguardLogo}
                     title="Vanguard"
                     address="xyz"
                     summary="small 24 hours depot"
+                  />
+                </Paper>
+                <br />
+                <Paper className={classes.paper}>
+                  <SupermarketCard
+                    logo={parknshopLogo}
+                    title="Park n' Shop"
+                    address="123"
+                    summary="Literally just around the corner!"
                   />
                 </Paper>
               </Grid>

@@ -49,6 +49,11 @@ class App extends Component {
             path="/posts/featured/groceries"
             component={Groceries2}
           />
+          <Route
+            exact
+            path="/posts/featured/supermarkets"
+            component={Groceries2}
+          />
           <Route path="/posts/:id" component={PostsDetails} />
           <Route path="/signin" component={SignIn} />
           <Route path="/signup" component={SignUp} />

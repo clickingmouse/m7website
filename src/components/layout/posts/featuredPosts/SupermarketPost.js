@@ -21,33 +21,39 @@ const SupermarketPost = () => {
 
   return (
     <Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt="supermarket"
-          height="140"
-          image={supermarketImg}
-          title="supermarket"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Nearyby supermarkets
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Usually the first thing after airport and check-in is to head off to
-            restock one's supplies, often in a foreign land without your the
-            familiar Safeway, Carrefour, or Tesco, its easy to lose one
-            bearings. Here are some options to help travellers off their feet
-          </Typography>
-        </CardContent>
-      </CardActionArea>
+      <Link to={"/posts/featured/supermarkets"} color="black">
+        <CardActionArea>
+          <CardMedia
+            component="img"
+            alt="supermarket"
+            height="140"
+            image={supermarketImg}
+            title="supermarket"
+          />
+          <CardContent>
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="h2"
+              color="textPrimary"
+            >
+              Nearby supermarkets
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              Usually the first thing after airport and check-in is to head off
+              to restock one's supplies, often in a foreign land without your
+              the familiar Safeway, Carrefour, or Tesco, its easy to lose one
+              bearings. Here are some options to help travellers off their feet
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Link>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
+        <Link to={"/posts/featured/supermarkets"} color="black">
+          <Button size="small" color="primary">
+            Learn More
+          </Button>
+        </Link>
       </CardActions>
     </Card>
   );

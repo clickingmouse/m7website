@@ -47,12 +47,11 @@ const AppsPost = () => {
         </CardActionArea>
       </Link>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
+        <Link to={"/posts/featured/handy-apps"} color="black">
+          <Button size="small" color="primary">
+            Learn More
+          </Button>
+        </Link>
       </CardActions>
     </Card>
   );
