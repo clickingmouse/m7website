@@ -16,7 +16,7 @@ import indigo from "@material-ui/core/colors/indigo";
 import { createMuiTheme } from "@material-ui/core/styles";
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 import { mergeClasses } from "@material-ui/styles";
-import Typography from "material-ui/styles/typography";
+import Typography from "@material-ui/core/typography";
 //const footerPrimary = cyan["A200"]; //#18ffff
 const footerPrimary = indigo["500"]; //#3f51b5
 
@@ -50,6 +50,7 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: footerPrimary
   }
 }));
+//<div className={classes.text}>Follow Us</div>
 const theme = createMuiTheme({
   palette: {
     primary: indigo,
@@ -71,18 +72,24 @@ const Footer = () => {
             <Grid item xs={3} spacing={3} />
             <Grid item xs={3} spacing={3} />
             <Grid item xs={3} spacing={3} className={classes.follow}>
-              <div className={classes.text}>Follow Us</div>
+              <Typography variant="h6" align="right">
+                {" "}
+                Follow Us
+              </Typography>
               <Divider />
-              <Toolbar>
-                <Button color="inherit">
-                  <i class="fab fa-facebook fa-2x" />
-                </Button>
-                <Button color="inherit">
-                  <i class="fab fa-whatsapp-square fa-2x" />
-                </Button>
-                <Button color="inherit">
-                  <i class="fab fa-weixin fa-2x" />
-                </Button>
+
+              <Toolbar disableGutters>
+                <span style={{ marginLeft: "auto" }}>
+                  <Button color="inherit">
+                    <i class="fab fa-facebook fa-2x" />
+                  </Button>
+                  <Button color="inherit">
+                    <i class="fab fa-whatsapp-square fa-2x" />
+                  </Button>
+                  <Button color="inherit">
+                    <i class="fab fa-weixin fa-2x" />
+                  </Button>
+                </span>
               </Toolbar>
             </Grid>
           </Grid>

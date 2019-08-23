@@ -68,11 +68,7 @@ const ContactDirections = () => {
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography>
-            Donec placerat, lectus sed mattis semper, neque lectus feugiat
-            lectus, varius pulvinar diam eros in elit. Pellentesque convallis
-            laoreet laoreet.
-          </Typography>
+          <Typography>Coming soon!.</Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel
@@ -90,10 +86,7 @@ const ContactDirections = () => {
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
-            sit amet egestas eros, vitae egestas augue. Duis vel est augue.
-          </Typography>
+          <Typography>Coming Soon!</Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel
@@ -105,10 +98,13 @@ const ContactDirections = () => {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography className={classes.heading}>Via Sea</Typography>
+          <Typography className={classes.heading}>Via Helicopter</Typography>
+          <Typography className={classes.secondaryHeading}>
+            (Yes! its possible!)
+          </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography>(Macau Ferry).</Typography>
+          <Typography>coming soon</Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </div>

@@ -50,11 +50,8 @@ const SiuYehPost = () => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+        <Button size="small" color="primary" disabled>
+          Coming Soon
         </Button>
       </CardActions>
     </Card>

@@ -58,9 +58,11 @@ const NavBar = () => {
             Getting Here
           </Link>
         </Button>
-        <Button color="inherit" className={classes.a}>
-          Around Us
-        </Button>
+        <Link smooth to="/#featured" className={classes.a}>
+          <Button color="inherit" className={classes.a}>
+            Around Us
+          </Button>
+        </Link>
         <Button color="inherit" className={classes.a}>
           Touristripedia
         </Button>

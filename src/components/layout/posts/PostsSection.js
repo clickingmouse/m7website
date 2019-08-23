@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
 const PostsSection = () => {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id="featured">
       <Container maxWidth="lg">
         <Grid container spacing={3}>
           <Grid item xs={12}>
