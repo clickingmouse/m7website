@@ -134,15 +134,15 @@ const ViaTrainCard = () => {
               <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
                   <Typography paragraph>
-                    <h3>A21/N21 Airport Bus - HKD 33.00</h3>
+                    <h3>Airport Express - HKD 100.00 - 115.00 </h3>
                   </Typography>
                   <Typography paragraph>
-                    Our advice is to take the Cityflyer bus. It's MUCH cheaper
-                    and has beautiful views (especially if you can snag one of
-                    the front seats on the upper deck). The Cityflyer bus costs
-                    HK$33 and takes 1 hour and 22 minutes; whereas, the Airport
-                    Express Train costs about HK $100 (and takes about 1 hour)
-                    and a taxi costs about HK$270 (and takes about 40 minutes).
+                    Unless your destination is right next to one of the train
+                    stations I would think twice before riding the Airport
+                    Express. The rail system serves the 7.8 million population
+                    of Hong Kong, and in order to better manage the crowd,
+                    there' a bit of a walk between the Airport Shuttle line and
+                    the other train lines.
                   </Typography>
                   <Typography paragraph />
                   <Typography paragraph />

@@ -103,7 +103,7 @@ const Groceries = () => {
                   <SupermarketCard
                     logo={wellcomeLogo}
                     title="Wellcome"
-                    address="abc"
+                    address="53-54 Kimberley Rd"
                     summary="24 hours!"
                   />
                 </Paper>
@@ -112,7 +112,7 @@ const Groceries = () => {
                   <SupermarketCard
                     logo={vanguardLogo}
                     title="Vanguard"
-                    address="xyz"
+                    address="4 Prat Ave"
                     summary="small 24 hours depot"
                   />
                 </Paper>
@@ -121,7 +121,7 @@ const Groceries = () => {
                   <SupermarketCard
                     logo={parknshopLogo}
                     title="Park n' Shop"
-                    address="123"
+                    address="Basement, Manson House, Nathan Rd"
                     summary="Literally just around the corner!"
                   />
                 </Paper>

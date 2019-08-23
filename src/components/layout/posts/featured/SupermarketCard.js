@@ -20,10 +20,9 @@ const SupermarketCard = props => {
       <Grid item xs={4} sm={4}>
         <img src={props.logo} alt="logo" width="100%" />
       </Grid>
-      <Grid item>
+      <Grid item xs={8}>
         <h5>{props.title}</h5> <hr />
-        Address : {props.address}
-        <br />- {props.summary}
+        <p> {props.address}</p>- {props.summary}
       </Grid>
     </Grid>
   );

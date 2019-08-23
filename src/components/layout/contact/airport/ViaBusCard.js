@@ -114,10 +114,10 @@ const ViaBusCard = () => {
                 />
               </div>
               <CardActions disableSpacing>
-                <IconButton aria-label="add to favorites">
+                <IconButton aria-label="add to favorites" disabled>
                   <FavoriteIcon />
                 </IconButton>
-                <IconButton aria-label="share">
+                <IconButton aria-label="share" disabled>
                   <ShareIcon />
                 </IconButton>
                 <IconButton

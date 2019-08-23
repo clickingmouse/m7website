@@ -34,7 +34,9 @@ const store = createStore(
   )
 );
 
-store.firebaseAuthIsReady.then(() => {}); //const authisReady
+store.firebaseAuthIsReady.then(() => {
+  // this breaks parallax
+}); //const authisReady
 //3.0
 //const rrfProps = {
 //  firebase,

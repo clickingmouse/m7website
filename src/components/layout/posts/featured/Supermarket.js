@@ -78,9 +78,18 @@ const Supermarket = props => {
                   map: map,
                   title: "Hello !"
                 });
-                var marke2 = new window.google.maps.Marker({
+                var parknshopMarker = new window.google.maps.Marker({
                   icon: {
                     url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+                  },
+                  position: parknshopcoords,
+                  map: map,
+                  title: "Hello !"
+                });
+                var parknshopMarker = new window.google.maps.Marker({
+                  icon: {
+                    url:
+                      "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png"
                   },
                   position: parknshopcoords,
                   map: map,
