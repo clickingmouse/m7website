@@ -12,6 +12,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import moment from "moment";
 import peakTramImg from "./peak-tram.jpg";
 const useStyles = makeStyles({
   card: {
@@ -47,7 +48,7 @@ const PostsDetails = props => {
                 <br />
                 <Typography variant="body2" color="textSecondary" component="p">
                   Posted By {post.authorFirstName} {post.authorLastName}
-                  <p>Jan 1 2000</p>
+                  <p>Posted at {moment(post.createdAt.toDate()).calendar()}</p>
                 </Typography>
               </CardContent>
             </CardActionArea>

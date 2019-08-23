@@ -9,6 +9,7 @@ import SkipPreviousIcon from "@material-ui/icons/SkipPrevious";
 import PlayArrowIcon from "@material-ui/icons/PlayArrow";
 import SkipNextIcon from "@material-ui/icons/SkipNext";
 import placeHolderImg from "./m7_logo_sm.jpg";
+import moment from "moment";
 const useStyles = makeStyles(theme => ({
   card: {
     display: "flex"
@@ -53,7 +54,10 @@ const PostsCard = ({ post }) => {
             {post.title}
           </Typography>
           <Typography variant="subtitle1" color="textSecondary">
-            Mac Miller
+            By {post.authorFirstName} {post.authorLastName}
+          </Typography>
+          <Typography variant="subtitle1" color="textSecondary">
+            Posted at {moment(post.createdAt.toDate()).calendar()}
           </Typography>
         </CardContent>
         <div className={classes.controls}>
