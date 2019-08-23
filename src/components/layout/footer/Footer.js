@@ -81,13 +81,22 @@ const Footer = () => {
               <Toolbar disableGutters>
                 <span style={{ marginLeft: "auto" }}>
                   <Button color="inherit">
-                    <i class="fab fa-facebook fa-2x" />
+                    <i
+                      class="fab fa-facebook fa-2x"
+                      style={{ color: "#3b5998" }}
+                    />
                   </Button>
                   <Button color="inherit">
-                    <i class="fab fa-whatsapp-square fa-2x" />
+                    <i
+                      class="fab fa-whatsapp-square fa-2x"
+                      style={{ color: "#25D366" }}
+                    />
                   </Button>
                   <Button color="inherit">
-                    <i class="fab fa-weixin fa-2x" />
+                    <i
+                      class="fab fa-weixin fa-2x"
+                      style={{ color: "#7BB32E" }}
+                    />
                   </Button>
                 </span>
               </Toolbar>
