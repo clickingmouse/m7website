@@ -6,17 +6,33 @@ import { createPost } from "../../../../store/actions/postActions";
 import { connect } from "react-redux";
 import { Redirect } from "react-router-dom";
 import Button from "@material-ui/core/es/Button/Button";
+import PreviewPhoto from "./PreviewPhoto";
 class CreatePost extends Component {
   state = {
     title: "",
     content: "",
-    imageFile: ""
+    picture: "",
+    pictureUrl: ""
   };
   handleChange = e => {
     this.setState({
       [e.target.id]: e.target.value
     });
   };
+
+  onChange = e => {
+    let reader = new FileReader();
+    let file = e.target.files[0];
+    reader.onloadend = () => {
+      this.setState({
+        picture: file,
+        pictureUrl: reader.result
+      });
+      //console.log("++++++++++++++++", this.state.picture);
+    };
+    reader.readAsDataURL(file);
+  };
+
   handleSubmit = e => {
     e.preventDefault();
     //console.log(this.state);
@@ -64,17 +80,19 @@ class CreatePost extends Component {
               id="imageFile"
               multiple
               type="file"
-              onChange={this.handleChange}
+              onChange={this.onChange}
             />
-            <label htmlFor="contained-button-file">
+            <label htmlFor="imageFile">
               <Button variant="contained" component="span" className="">
                 Up load picture
               </Button>
             </label>
+
             <div>
               <button className="btn">Submit</button>
             </div>
           </form>
+          <PreviewPhoto pictureUrl={this.state.pictureUrl} />
         </Container>
       </div>
     );
