@@ -33,14 +33,10 @@ class PostsDashboard extends Component {
         <Container>
           <Grid container spacing={3}>
             <Grid item sm={7}>
-              <Paper>
-                <PostsList posts={posts} />
-              </Paper>
+              <PostsList posts={posts} />
             </Grid>
             <Grid item sm={5}>
-              <Paper>
-                <RecentActivities activities={notifications} />
-              </Paper>
+              <RecentActivities activities={notifications} />
             </Grid>
           </Grid>
         </Container>

@@ -4,7 +4,7 @@ const PreviewPhoto = props => {
   const { pictureUrl } = props;
   return (
     <div>
-      <img className="img-fluid" src={pictureUrl} width="auto" />
+      <img className="img-fluid" src={pictureUrl} />
     </div>
   );
 };

@@ -38,6 +38,7 @@ const RecentActivities = props => {
   const classes = useStyles();
   return (
     <div>
+      <br />
       <Card>
         <CardContent>
           <Typography className={classes.title}>Recent Activities</Typography>
