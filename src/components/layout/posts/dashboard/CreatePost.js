@@ -5,10 +5,12 @@ import FormLabel from "@material-ui/core/FormLabel";
 import { createPost } from "../../../../store/actions/postActions";
 import { connect } from "react-redux";
 import { Redirect } from "react-router-dom";
+import Button from "@material-ui/core/es/Button/Button";
 class CreatePost extends Component {
   state = {
     title: "",
-    content: ""
+    content: "",
+    imageFile: ""
   };
   handleChange = e => {
     this.setState({
@@ -56,7 +58,19 @@ class CreatePost extends Component {
               value={this.state.value}
               onChange={this.handleChange}
             />
-
+            <input
+              accept="image/*"
+              className=""
+              id="imageFile"
+              multiple
+              type="file"
+              onChange={this.handleChange}
+            />
+            <label htmlFor="contained-button-file">
+              <Button variant="contained" component="span" className="">
+                Up load picture
+              </Button>
+            </label>
             <div>
               <button className="btn">Submit</button>
             </div>

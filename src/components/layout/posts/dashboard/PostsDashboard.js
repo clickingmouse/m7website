@@ -7,7 +7,7 @@ import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import RecentPosts from "./RecentPosts";
+import RecentActivities from "./RecentActivities";
 import PostsList from "./PostsList";
 import { firestoreConnect } from "react-redux-firebase";
 
@@ -24,8 +24,8 @@ const useStyles = makeStyles(theme => ({
 
 class PostsDashboard extends Component {
   render() {
-    //console.log(this.props);
-    const { posts } = this.props;
+    console.log("xxxxxxxxxxxxxxx", this.props);
+    const { posts, notifications } = this.props;
     //const classes = useStyles();
     return (
       <div className="postsDashboard">
@@ -39,7 +39,7 @@ class PostsDashboard extends Component {
             </Grid>
             <Grid item sm={5}>
               <Paper>
-                <RecentPosts />
+                <RecentActivities activities={notifications} />
               </Paper>
             </Grid>
           </Grid>
@@ -53,11 +53,15 @@ const mapStateToProps = state => {
   console.log(state);
   return {
     //posts: state.post.posts
-    posts: state.firestore.ordered.posts
+    posts: state.firestore.ordered.posts,
+    notifications: state.firestore.ordered.notifications
   };
 };
 
 export default compose(
   connect(mapStateToProps),
-  firestoreConnect([{ collection: "posts" }])
+  firestoreConnect([
+    { collection: "posts", orderBy: ["createdAt", "desc"] },
+    { collection: "notifications", limit: 5, orderBy: ["time", "desc"] }
+  ])
 )(PostsDashboard);
