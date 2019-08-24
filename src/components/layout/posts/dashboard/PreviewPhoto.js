@@ -4,7 +4,7 @@ const PreviewPhoto = props => {
   const { pictureUrl } = props;
   return (
     <div>
-      <img className="img-fluid" src={pictureUrl} />
+      <img style={{ height: "80%" }} src={pictureUrl} width="auto" />
     </div>
   );
 };

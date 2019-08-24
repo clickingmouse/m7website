@@ -13,6 +13,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import moment from "moment";
+import PreviewPhoto from "./PreviewPhoto";
 import peakTramImg from "./peak-tram.jpg";
 const useStyles = makeStyles({
   card: {
@@ -31,26 +32,36 @@ const PostsDetails = props => {
         <Container>
           <Card className={classes.card}>
             <CardActionArea>
-              <CardMedia
-                component="img"
-                alt="Contemplative Reptile"
-                height="100%"
-                image={peakTramImg}
-                title="Contemplative Reptile"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  {post.title} - {id}
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  {post.content}
-                </Typography>
-                <br />
-                <Typography variant="body2" color="textSecondary" component="p">
-                  Posted By {post.authorFirstName} {post.authorLastName}
-                  <p>Posted at {moment(post.createdAt.toDate()).calendar()}</p>
-                </Typography>
-              </CardContent>
+              <div style={{ height: "50vh" }}>
+                <CardMedia>
+                  <PreviewPhoto pictureUrl={post.pictureUrl} />
+                </CardMedia>
+              </div>
+              <div>
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    {post.title} - {id}
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    {post.content}
+                  </Typography>
+                  <br />
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    Posted By {post.authorFirstName} {post.authorLastName}
+                    <p>
+                      Posted at {moment(post.createdAt.toDate()).calendar()}
+                    </p>
+                  </Typography>
+                </CardContent>
+              </div>
             </CardActionArea>
             <CardActions>
               <Button size="small" color="primary">
