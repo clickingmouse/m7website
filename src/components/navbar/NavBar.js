@@ -3,8 +3,10 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
+import Grid from "@material-ui/core/Grid";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
+import Hidden from "@material-ui/core/Hidden";
 import { makeStyles } from "@material-ui/core/styles";
 //import { Link } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
@@ -32,6 +34,7 @@ const NavBar = () => {
   return (
     <AppBar color="primary" position="fixed" className={classes.appbar}>
       <Toolbar>
+        {/** 
         <IconButton
           edge="start"
           className={classes.menuButton}
@@ -40,29 +43,34 @@ const NavBar = () => {
         >
           <MenuIcon />
         </IconButton>
+        */}
         <Typography variant="h6" className={classes.title}>
           Majestic7Guesthouse
         </Typography>
+
         <Button color="inherit">
           <Link smooth to="/" className={classes.a}>
             Home
           </Link>
         </Button>
-        <Button color="inherit">
-          <Link smooth to="/#rooms" className={classes.a}>
-            Rooms
-          </Link>
-        </Button>
-        <Button color="inherit">
-          <Link smooth to="/#here" className={classes.a}>
-            Getting Here
-          </Link>
-        </Button>
-        <Link smooth to="/#featured" className={classes.a}>
-          <Button color="inherit" className={classes.a}>
-            Around Us
+        <Hidden only="xs">
+          <Button color="inherit">
+            <Link smooth to="/#rooms" className={classes.a}>
+              Rooms
+            </Link>
           </Button>
-        </Link>
+
+          <Button color="inherit">
+            <Link smooth to="/#here" className={classes.a}>
+              Getting Here
+            </Link>
+          </Button>
+          <Link smooth to="/#featured" className={classes.a}>
+            <Button color="inherit" className={classes.a}>
+              Around Us
+            </Button>
+          </Link>
+        </Hidden>
         <Link to="/posts">
           <Button color="inherit" className={classes.a}>
             Touristripedia
