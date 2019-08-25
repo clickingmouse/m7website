@@ -68,10 +68,10 @@ const Footer = () => {
         <Container>
           <Grid container spacing={1} />
           <Grid container spacing={1}>
-            <Grid item xs={3} spacing={3} />
-            <Grid item xs={3} spacing={3} />
-            <Grid item xs={3} spacing={3} />
-            <Grid item xs={6} sm={3} spacing={3} className={classes.follow}>
+            <Grid item sm={3} spacing={3} />
+            <Grid item sm={3} spacing={3} />
+            <Grid item sm={3} spacing={3} />
+            <Grid item xs={9} sm={3} spacing={3} className={classes.follow}>
               <Typography variant="h6" align="right">
                 {" "}
                 Follow Us
