@@ -15,6 +15,7 @@ import Typography from "@material-ui/core/Typography";
 import moment from "moment";
 import PreviewPhoto from "./PreviewPhoto";
 import peakTramImg from "./peak-tram.jpg";
+import { Divider } from "material-ui";
 const useStyles = makeStyles({
   card: {
     //    maxWidth: ,
@@ -31,38 +32,24 @@ const PostsDetails = props => {
       <div>
         <Container>
           <Card className={classes.card}>
-            <CardActionArea>
-              <div style={{ height: "50vh" }}>
-                <CardMedia>
-                  <PreviewPhoto pictureUrl={post.pictureUrl} />
-                </CardMedia>
-              </div>
-              <div>
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    {post.title} - {id}
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
-                    {post.content}
-                  </Typography>
-                  <br />
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
-                    Posted By {post.authorFirstName} {post.authorLastName}
-                    <p>
-                      Posted at {moment(post.createdAt.toDate()).calendar()}
-                    </p>
-                  </Typography>
-                </CardContent>
-              </div>
-            </CardActionArea>
+            <PreviewPhoto pictureUrl={post.pictureUrl} />
+
+            <Divider />
+
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                {post.title} - {id}
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                {post.content}
+              </Typography>
+              <br />
+              <Typography variant="body2" color="textSecondary" component="p">
+                Posted By {post.authorFirstName} {post.authorLastName}
+                <p>Posted at {moment(post.createdAt.toDate()).calendar()}</p>
+              </Typography>
+            </CardContent>
+
             <CardActions>
               <Button size="small" color="primary">
                 Share

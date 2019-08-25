@@ -44,7 +44,7 @@ const NavBar = () => {
           Majestic7Guesthouse
         </Typography>
         <Button color="inherit">
-          <Link smooth to="/#about" className={classes.a}>
+          <Link smooth to="/" className={classes.a}>
             Home
           </Link>
         </Button>
@@ -63,9 +63,11 @@ const NavBar = () => {
             Around Us
           </Button>
         </Link>
-        <Button color="inherit" className={classes.a}>
-          Touristripedia
-        </Button>
+        <Link to="/posts">
+          <Button color="inherit" className={classes.a}>
+            Touristripedia
+          </Button>
+        </Link>
         <Button color="inherit" className={classes.a}>
           Going To
         </Button>

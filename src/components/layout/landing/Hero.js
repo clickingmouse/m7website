@@ -1,14 +1,30 @@
 import React from "react";
+//import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+import { Parallax, Background } from "react-parallax";
 import tstArielImg from "../../../images/landing/Tsim_Sha_Tsui_Ariel.jpg";
+import Image from "./Image";
+
 const Hero = () => {
   console.log("tst ariel parallax");
   return (
     <div>
+      {/*
       <div className="parallax-container">
         <div className="parallax">
           <img src={tstArielImg} />
         </div>
       </div>
+    */}
+      <Parallax
+        blur={0}
+        bgImage={tstArielImg}
+        bgImageAlt="Tsim Sha Tsui Ariel View"
+        strength={200}
+      >
+        Put some text content here - even an empty div with fixed dimensions to
+        have a height for the parallax.
+        <div style={{ height: "50vh" }} />
+      </Parallax>
       {/*
       <div className="section white">
         <div className="row container">

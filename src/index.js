@@ -5,7 +5,7 @@ import "./index.css";
 import App from "./App";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import * as serviceWorker from "./serviceWorker";
-
+import { ParallaxProvider } from "react-scroll-parallax";
 import { createStore, applyMiddleware, compose } from "redux";
 import rootReducer from "./store/reducers/rootReducer";
 import { Provider } from "react-redux";
