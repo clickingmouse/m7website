@@ -68,9 +68,14 @@ const NavBar = () => {
             Touristripedia
           </Button>
         </Link>
-        <Button color="inherit" className={classes.a}>
-          Going To
-        </Button>
+        <a
+          href="https://hotels.cloudbeds.com/reservation/IOlzSh"
+          target="_blank"
+        >
+          <Button color="inherit" className={classes.a}>
+            BOOK
+          </Button>
+        </a>
         <Link to="/faq">
           <Button color="inherit" className={classes.a}>
             FAQ
