@@ -71,7 +71,7 @@ const Footer = () => {
             <Grid item xs={3} spacing={3} />
             <Grid item xs={3} spacing={3} />
             <Grid item xs={3} spacing={3} />
-            <Grid item xs={3} spacing={3} className={classes.follow}>
+            <Grid item xs={6} sm={3} spacing={3} className={classes.follow}>
               <Typography variant="h6" align="right">
                 {" "}
                 Follow Us

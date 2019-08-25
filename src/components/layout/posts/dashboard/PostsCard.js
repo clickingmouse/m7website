@@ -13,7 +13,7 @@ import placeHolderImg from "./m7_logo_sm.jpg";
 import moment from "moment";
 const useStyles = makeStyles(theme => ({
   card: {
-    //padding: theme.spacing(2),
+    padding: theme.spacing(2),
     height: 200,
     display: "flex",
     margin: theme.spacing(2)

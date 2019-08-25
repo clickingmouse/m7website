@@ -67,9 +67,14 @@ const FamilyCard = () => {
         </CardContent>
       </div>
       <CardActions>
-        <Button size="small" color="primary">
-          Book Now!
-        </Button>
+        <a
+          href="https://hotels.cloudbeds.com/reservation/IOlzSh"
+          target="_blank"
+        >
+          <Button size="small" color="primary">
+            Book Now!
+          </Button>
+        </a>
       </CardActions>
     </Card>
   );
