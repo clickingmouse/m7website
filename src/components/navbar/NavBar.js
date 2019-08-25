@@ -3,6 +3,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
+import Divider from "@material-ui/core/Divider";
 import Grid from "@material-ui/core/Grid";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -24,6 +25,9 @@ const useStyles = makeStyles(theme => ({
   appbar: {
     backgroundColor: "#00838f"
     //    color: { cyan }
+  },
+  responsive: {
+    flex: "0 0 100%"
   },
   a: { color: "#fff" },
   ":hover": { color: "#00F" }
@@ -47,13 +51,13 @@ const NavBar = () => {
         <Typography variant="h6" className={classes.title}>
           Majestic7Guesthouse
         </Typography>
-
-        <Button color="inherit">
-          <Link smooth to="/" className={classes.a}>
-            Home
-          </Link>
-        </Button>
         <Hidden only="xs">
+          <Button color="inherit">
+            <Link smooth to="/" className={classes.a}>
+              Home
+            </Link>
+          </Button>
+
           <Button color="inherit">
             <Link smooth to="/#rooms" className={classes.a}>
               Rooms
@@ -70,26 +74,54 @@ const NavBar = () => {
               Around Us
             </Button>
           </Link>
+
+          <Link to="/posts">
+            <Button color="inherit" className={classes.a}>
+              Touristripedia
+            </Button>
+          </Link>
+          <a
+            href="https://hotels.cloudbeds.com/reservation/IOlzSh"
+            target="_blank"
+          >
+            <Button color="inherit" className={classes.a}>
+              BOOK
+            </Button>
+          </a>
+          <Link to="/faq">
+            <Button color="inherit" className={classes.a}>
+              FAQ
+            </Button>
+          </Link>
         </Hidden>
-        <Link to="/posts">
-          <Button color="inherit" className={classes.a}>
-            Touristripedia
-          </Button>
-        </Link>
-        <a
-          href="https://hotels.cloudbeds.com/reservation/IOlzSh"
-          target="_blank"
-        >
-          <Button color="inherit" className={classes.a}>
-            BOOK
-          </Button>
-        </a>
-        <Link to="/faq">
-          <Button color="inherit" className={classes.a}>
-            FAQ
-          </Button>
-        </Link>
       </Toolbar>
+      <Hidden smUp>
+        <Toolbar>
+          <Button color="inherit">
+            <Link smooth to="/" className={classes.a}>
+              Home
+            </Link>
+          </Button>
+          <Link to="/posts">
+            <Button color="inherit" className={classes.a}>
+              Touristripedia
+            </Button>
+          </Link>
+          <a
+            href="https://hotels.cloudbeds.com/reservation/IOlzSh"
+            target="_blank"
+          >
+            <Button color="inherit" className={classes.a}>
+              BOOK
+            </Button>
+          </a>
+          <Link to="/faq">
+            <Button color="inherit" className={classes.a}>
+              FAQ
+            </Button>
+          </Link>
+        </Toolbar>
+      </Hidden>
     </AppBar>
   );
 };
