@@ -10,7 +10,11 @@ import Grid from "@material-ui/core/Grid";
 import RecentActivities from "./RecentActivities";
 import PostsList from "./PostsList";
 import { firestoreConnect } from "react-redux-firebase";
-
+import PostsAppBar from "./menubar/PostsAppBar";
+import SignedInLinks from "./menubar/SignedInLinks";
+import SignedOutLinks from "./menubar/SignedOutLinks";
+import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
+import firebase from "../../../../config/firebaseConfig";
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
@@ -23,6 +27,24 @@ const useStyles = makeStyles(theme => ({
 }));
 
 class PostsDashboard extends Component {
+  state = { isSignedIn: false };
+  uiConfig = {
+    signInFlow: "popup",
+    signInOptions: [
+      //      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+      firebase.auth.FacebookAuthProvider.PROVIDER_ID
+    ],
+    callbacks: {
+      signInSuccessWithAuthResult: () => false
+    }
+  };
+  componentDIdMount = () => {
+    firebase.auth().onAuthStateChanged(user => {
+      this.setState({ isSignedIn: !!user });
+    });
+  };
+
   render() {
     console.log("xxxxxxxxxxxxxxx", this.props);
     const { posts, notifications } = this.props;
@@ -36,6 +58,22 @@ class PostsDashboard extends Component {
               <PostsList posts={posts} />
             </Grid>
             <Grid item sm={5}>
+              <PostsAppBar />
+              <div style={{ height: 150 }}>
+                {this.state.isSignedIn ? (
+                  <span>
+                    <div>Signed In!</div>
+                    <button onClick={() => firebase.auth().signOut()}>
+                      Sign Out
+                    </button>
+                  </span>
+                ) : (
+                  <StyledFirebaseAuth
+                    uiConfig={this.uiConfig}
+                    firebaseAuth={firebase.auth()}
+                  />
+                )}
+              </div>
               <RecentActivities activities={notifications} />
             </Grid>
           </Grid>

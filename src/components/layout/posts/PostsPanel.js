@@ -45,11 +45,10 @@ class PostsPanel extends Component {
   render() {
     return (
       <div>
-        <h1>-=POST PANEL=-</h1>
-        <PostsAppBar />
+        <h1 style={{ textAlign: "center" }}>-=POST PANEL=-</h1>
+        {/* 
         <Container style={{ height: 200 }}>
           <hr />
-
           {this.state.isSignedIn ? (
             <span>
               <div>Signed In!</div>
@@ -64,6 +63,8 @@ class PostsPanel extends Component {
             />
           )}
         </Container>
+                  */}
+
         <PostsDashboard />
       </div>
     );
