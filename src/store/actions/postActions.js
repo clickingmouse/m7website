@@ -11,29 +11,50 @@ export const createPost = post => {
   return (dispatch, getState, { getFirebase, getFirestore }) => {
     // make async call to database
     console.log("------=========", post);
+    console.log(">>>>>....>>>>", post.picture);
     const firestore = getFirestore();
     const firebase = getFirebase();
     const profile = getState().firebase.profile;
     const authorId = getState().firebase.auth.uid;
     //
-    firebase
-      .storage()
-      .ref()
-      .child(`posts/${new Date().getTime()}`)
-      .put(post.picture)
-      .then(snapshot => {
-        //
-        console.log("++++++++++++", snapshot.metadata);
-        firestore
+
+    post.picture != ""
+      ? firebase
+          .storage()
+          .ref()
+          .child(`posts/${new Date().getTime()}`)
+          .put(post.picture)
+          .then(snapshot => {
+            //
+            console.log("++++++++++++", snapshot.metadata);
+            firestore
+              .collection("posts")
+              .add({
+                ...post,
+                authorFirstName: profile.firstName,
+                authorLastName: profile.lastName,
+                authorId: authorId,
+                createdAt: new Date(),
+                //
+                picture: snapshot.metadata.fullPath
+              })
+
+              .then(() => {
+                dispatch({ type: "CREATE_POST", post: post });
+              })
+              .catch(err => {
+                dispatch({ type: "CREATE_POST_ERROR", err });
+              });
+          }) // snapshots
+      : firestore
           .collection("posts")
           .add({
             ...post,
             authorFirstName: profile.firstName,
             authorLastName: profile.lastName,
             authorId: authorId,
-            createdAt: new Date(),
-            //
-            picture: snapshot.metadata.fullPath
+            createdAt: new Date()
+            //picture: snapshot.metadata.fullPath
           })
 
           .then(() => {
@@ -42,6 +63,5 @@ export const createPost = post => {
           .catch(err => {
             dispatch({ type: "CREATE_POST_ERROR", err });
           });
-      }); // snapshots
   };
 };
